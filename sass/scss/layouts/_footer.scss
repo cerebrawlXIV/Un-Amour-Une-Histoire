@@ -1,0 +1,99 @@
+footer{
+    color: $third-color;
+    margin-top: 80px;
+    h3{
+        font-family: $important-txt;
+        font-weight: 700;
+        font-size: 1.05rem;
+        padding: 20px;
+        text-align: center;  
+        background-color: $second-color;
+        margin-bottom: -1px; // défaut de jointure entre les deux blocs
+        line-height: 20px;
+    }
+    #information{
+        background-color: $second-color;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        #follow-us{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 90%;
+            h4{
+                @extend %footer-title;
+            }
+            div{
+                display: flex;
+                justify-content: space-around;
+                width: 30%;
+                i{
+                    font-size: 40px;
+                    color: $first-color;
+                    margin-top: 20px;
+                }
+            }
+        }
+        #separation{
+            border-top: 1px solid $third-color;
+            width: 50%;
+            margin-top: 20px;
+        }
+        #contact{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 90%;
+            margin-bottom: 20px;
+            h4{
+                @extend %footer-title;  
+            }
+            p{
+                margin-top: 15px;
+                font-size: .8rem;
+                font-size: 500;
+                text-align: center;
+                line-height: 15px;
+            }
+        }
+    }
+    > div:last-child{
+        padding: 20px;
+        p{
+            font-size: .8rem;
+            font-weight: 500;
+            text-align: center;
+        }
+    }
+}
+
+@media screen and(min-width: 800px){
+    footer{
+        #information{
+            flex-direction: row;
+            align-items: center;
+            padding:0 10% 20px 10%;;
+            #follow-us{
+                margin-top: 0;
+                div{
+                    width: 40%;
+                }
+            }
+            #separation{
+                width: 1px;
+                height: 80px;
+                border-bottom: none;
+                border-left: 1px solid $third-color;
+            }
+        }
+    }
+}
+
+@media screen and(min-width: 1024px){
+    footer{
+        #information{
+            padding: 0 15% 10px 15%;
+        }
+    } 
+}

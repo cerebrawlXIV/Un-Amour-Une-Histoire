@@ -1,0 +1,18 @@
+// Utils
+@import "scss/utils/variable";
+@import "scss/utils/placeholders";
+
+// Base
+@import "scss/base/reset";
+@import "scss/base/font";
+@import "scss/base/base";
+
+// Components
+@import "scss/components/burger";
+
+//Layouts
+@import "scss/layouts/nav";
+@import "scss/layouts/footer";
+
+// Pages
+@import "scss/pages/accueil";
