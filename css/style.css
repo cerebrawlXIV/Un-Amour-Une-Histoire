@@ -415,7 +415,7 @@ footer > div:last-child p {
   position: absolute;
   top: 0;
   left: 50%;
-  background: top 1px left 1px no-repeat url("/images/gold-quarter-left-top.png"), right 1px top 40px no-repeat url("/images/gold-quarter-right.png");
+  background: top 1px left 1px no-repeat url("../images/gold-quarter-left-top.png"), right 1px top 40px no-repeat url("../images/gold-quarter-right.png");
   padding: 20px;
   width: 100%;
   transform: translateX(-50%);
