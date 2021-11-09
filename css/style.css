@@ -286,6 +286,7 @@ footer #information #contact p {
   font-size: 500;
   text-align: center;
   line-height: 15px;
+  color: #20201b;
 }
 footer > div:last-child {
   padding: 20px;
