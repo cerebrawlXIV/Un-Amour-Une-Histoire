@@ -1,7 +1,7 @@
 // Récupération des différents éléments dans le DOM
 const burger = document.querySelector(".burger");
 const nav = document.querySelector("#mobile-nav");
-const title = document.querySelector("h1");
+const title = document.querySelector(".company-name");
 
 // Récupération du clique sur l'icone burger
 burger.addEventListener("click", () => {

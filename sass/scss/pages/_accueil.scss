@@ -1,12 +1,12 @@
 // Header
-#married-picture{
+#index-header{
     width: 100%;
     height: 100vh;
     background-image: url("../images/married-couple-background-small.jpg");
     background-size: cover;
     box-shadow: inset -2px -5px 31px 15px $first-color;
     margin-top: -100px;
-    header{
+    .degraded-header{
         position: relative;
         display: flex;
         justify-content: center;
@@ -21,9 +21,7 @@
         h1{
             opacity: 1;
             transition: opacity .5s ease-in-out .3s;
-            font-size: 2rem;
-            font-family: $important-txt;
-            font-weight: 700;
+            @extend %company-name;
             color: $first-color;
             text-shadow: 0px 0px 2px darken($second-color, 30%);
             .first-part{
@@ -162,11 +160,11 @@
 }
 
 // > 700px
-@media screen and(min-width: 700px){
-    #married-picture{
+@media screen and(min-width: 1024px){
+    #index-header{
         background-image: url("../images/married-couple-background-medium.jpg");
         background-position: center;
-        header{
+        .degraded-header{
             justify-content: flex-start;
             background: linear-gradient(180deg, 
             rgba(245, 245, 245, 1) 0%, 
@@ -189,9 +187,9 @@
 
 // > 1024px
 @media screen and(min-width: 1024px){
-    #married-picture{
+    #index-header{
         margin-top: -100px; // Identique à la hauteur du navigateur
-        header{
+        .degraded-header{
             h1{
                 font-size: 2.3rem;
             }
@@ -231,9 +229,9 @@
 
 // > 1345px
 @media screen and(min-width: 1345px){
-    #married-picture{
+    #index-header{
         background-image: url("../images/married-couple-background-big.jpeg");
-        header{
+        .degraded-header{
             h1{            
                 margin-left: 30%;
             }

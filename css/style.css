@@ -24,6 +24,29 @@ footer #information #contact h4, footer #information #follow-us h4 {
   margin-top: 20px;
 }
 
+header > div {
+  margin-top: -100px;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  box-shadow: inset -2px -5px 15px 7px whitesmoke;
+}
+
+header > div > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, whitesmoke 0%, rgba(245, 245, 245, 0.8) 15%, rgba(206, 210, 55, 0.5) 45%, rgba(245, 245, 245, 0) 100%);
+}
+
+#index-header .degraded-header h1, header > div > div p.company-name {
+  font-size: 2rem;
+  font-family: "Cormorant Garamond";
+  font-weight: 700;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -119,11 +142,11 @@ body {
 }
 .burger.active span::before {
   transform: translateY(0) rotate(45deg);
-  background-color: #ced237;
+  background-color: #cdd237;
 }
 .burger.active span::after {
   transform: translateY(0) rotate(-45deg);
-  background-color: #ced237;
+  background-color: #cdd237;
 }
 
 @media screen and (min-width: 1024px) {
@@ -153,7 +176,7 @@ body {
 #desktop-nav ul li a {
   display: inline-block;
   padding-bottom: 5px;
-  color: #ced237;
+  color: #cdd237;
   font-size: 1.4rem;
   font-weight: 500;
   text-shadow: 0 0 1px #12120f;
@@ -220,7 +243,7 @@ body {
   font-size: 1.6rem;
   text-shadow: 0 0 1px whitesmoke;
   padding-bottom: 10px;
-  border-bottom: 1px solid #ced237;
+  border-bottom: 1px solid #cdd237;
 }
 
 @media screen and (min-width: 1024px) {
@@ -242,12 +265,12 @@ footer h3 {
   font-size: 1.05rem;
   padding: 20px;
   text-align: center;
-  background-color: #ced237;
+  background-color: #cdd237;
   margin-bottom: -1px;
   line-height: 20px;
 }
 footer #information {
-  background-color: #ced237;
+  background-color: #cdd237;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -321,7 +344,30 @@ footer > div:last-child p {
     padding: 0 15% 10px 15%;
   }
 }
-#married-picture {
+header > div {
+  background-image: url("/images/boutique.png");
+  margin-top: -100px;
+}
+header > div > div p.company-name {
+  text-shadow: 0px 0px 2px #31320b;
+  color: whitesmoke;
+}
+header > div > div p.company-name span:last-child {
+  margin-left: 30px;
+}
+header h1 {
+  text-align: center;
+  padding: 30px 5px 0px 5px;
+  font-size: 1.3em;
+  font-weight: 700;
+  font-family: "Cormorant Garamond";
+  text-transform: uppercase;
+  color: #cdd237;
+  text-shadow: 0px 0px 1px #595b15;
+  margin-top: 15px;
+}
+
+#index-header {
   width: 100%;
   height: 100vh;
   background-image: url("../images/married-couple-background-small.jpg");
@@ -329,7 +375,7 @@ footer > div:last-child p {
   box-shadow: inset -2px -5px 31px 15px whitesmoke;
   margin-top: -100px;
 }
-#married-picture header {
+#index-header .degraded-header {
   position: relative;
   display: flex;
   justify-content: center;
@@ -338,24 +384,21 @@ footer > div:last-child p {
   height: 100%;
   background: linear-gradient(180deg, whitesmoke 0%, rgba(245, 245, 245, 0.8) 15%, rgba(206, 210, 55, 0.5) 45%, rgba(245, 245, 245, 0) 100%);
 }
-#married-picture header h1 {
+#index-header .degraded-header h1 {
   opacity: 1;
   transition: opacity 0.5s ease-in-out 0.3s;
-  font-size: 2rem;
-  font-family: "Cormorant Garamond";
-  font-weight: 700;
   color: whitesmoke;
-  text-shadow: 0px 0px 2px #5a5b15;
+  text-shadow: 0px 0px 2px #595b15;
 }
-#married-picture header h1 .first-part {
+#index-header .degraded-header h1 .first-part {
   animation: titleappearance 2s ease-in;
 }
-#married-picture header h1 .second-part {
+#index-header .degraded-header h1 .second-part {
   opacity: 0;
   animation: titleappearance 2s ease-in 2s forwards;
   margin-left: 30px;
 }
-#married-picture header h1.disabled {
+#index-header .degraded-header h1.disabled {
   opacity: 0;
 }
 
@@ -367,8 +410,8 @@ footer > div:last-child p {
   margin: 40px auto;
   padding: 15px 0px 20px 0;
   background: top right 1px no-repeat url("../images/gold-quarter.png");
-  border-left: 1px solid #ced237;
-  border-bottom: 1px solid #ced237;
+  border-left: 1px solid #cdd237;
+  border-bottom: 1px solid #cdd237;
 }
 #presentation article {
   display: flex;
@@ -394,7 +437,7 @@ footer > div:last-child p {
   line-height: 22px;
 }
 #presentation article p .gold-text {
-  color: #ced237;
+  color: #cdd237;
 }
 #presentation aside {
   display: none;
@@ -456,7 +499,7 @@ footer > div:last-child p {
   font-size: 1.5rem;
   font-weight: 700;
   font-family: "Cormorant Garamond";
-  border-bottom: 1px solid #ced237;
+  border-bottom: 1px solid #cdd237;
   width: 70%;
   text-align: center;
 }
@@ -474,16 +517,16 @@ footer > div:last-child p {
   display: none;
 }
 
-@media screen and (min-width: 700px) {
-  #married-picture {
+@media screen and (min-width: 1024px) {
+  #index-header {
     background-image: url("../images/married-couple-background-medium.jpg");
     background-position: center;
   }
-  #married-picture header {
+  #index-header .degraded-header {
     justify-content: flex-start;
     background: linear-gradient(180deg, whitesmoke 0%, rgba(245, 245, 245, 0.8) 15%, rgba(206, 210, 55, 0.3) 45%, rgba(245, 245, 245, 0) 100%);
   }
-  #married-picture header h1 {
+  #index-header .degraded-header h1 {
     margin-top: calc(100vh / 4);
     margin-left: 10%;
     color: #12120f;
@@ -495,10 +538,10 @@ footer > div:last-child p {
   }
 }
 @media screen and (min-width: 1024px) {
-  #married-picture {
+  #index-header {
     margin-top: -100px;
   }
-  #married-picture header h1 {
+  #index-header .degraded-header h1 {
     font-size: 2.3rem;
   }
 
@@ -527,10 +570,10 @@ footer > div:last-child p {
   }
 }
 @media screen and (min-width: 1345px) {
-  #married-picture {
+  #index-header {
     background-image: url("../images/married-couple-background-big.jpeg");
   }
-  #married-picture header h1 {
+  #index-header .degraded-header h1 {
     margin-left: 30%;
   }
 
@@ -554,6 +597,118 @@ footer > div:last-child p {
   }
   to {
     opacity: 1;
+  }
+}
+#shop-presentation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 50px 20px;
+  margin: auto;
+}
+#shop-presentation #shop-movie {
+  position: relative;
+  width: 321px;
+  display: flex;
+  justify-content: center;
+}
+#shop-presentation #shop-movie video {
+  max-width: 100%;
+  border-radius: 5px;
+}
+#shop-presentation #shop-movie > div {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: rgba(18, 18, 15, 0.2);
+  box-shadow: inset 3px 2px 26px 5px whitesmoke;
+  transition: background-color 0.4s ease-in-out;
+}
+#shop-presentation #shop-movie > div.active {
+  background-color: rgba(18, 18, 15, 0);
+}
+#shop-presentation #shop-movie > div.active .play-button {
+  opacity: 0;
+}
+#shop-presentation #shop-movie > div .play-button {
+  color: whitesmoke;
+  text-shadow: 0 0 3px #12120f;
+  font-size: 5rem;
+  opacity: 1;
+  transition: opacity 0.4s ease-in-out;
+}
+#shop-presentation article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 10px 10px 30px 10px;
+  margin-top: 30px;
+  border-left: 1px solid #cdd237;
+  border-bottom: 1px solid #cdd237;
+  background: top right 1px no-repeat url("../images/gold-quarter.png"), center no-repeat url("/images/Plan de travail 1.png");
+}
+#shop-presentation article h2 {
+  position: relative;
+  margin-top: 20px;
+  font-size: 1.4rem;
+  font-weight: 700;
+  font-family: "Cormorant Garamond";
+}
+#shop-presentation article h3 {
+  margin-top: 10px;
+}
+#shop-presentation article p {
+  margin-top: 20px;
+  line-height: 22px;
+  font-size: 0.84rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+@media screen and (min-width: 390px) {
+  #shop-presentation {
+    width: 90%;
+    margin-top: 30px;
+    border-left: 1px solid #cdd237;
+    border-bottom: 1px solid #cdd237;
+    background: top right 1px no-repeat url("../images/gold-quarter.png");
+  }
+  #shop-presentation article {
+    border: none;
+    background: center no-repeat url("/images/Plan de travail 1.png");
+    padding: 20px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #shop-presentation {
+    margin-top: 40px;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80%;
+  }
+  #shop-presentation #shop-movie video {
+    min-width: 321px;
+  }
+  #shop-presentation article {
+    width: 50%;
+    margin-top: 0;
+  }
+  #shop-presentation article h2 {
+    border-bottom: 1px solid #cdd237;
+    padding-bottom: 5px;
+  }
+}
+@media screen and (min-width: 1345px) {
+  #shop-presentation {
+    width: 70%;
   }
 }
 

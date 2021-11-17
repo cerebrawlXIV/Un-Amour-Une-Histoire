@@ -1,0 +1,116 @@
+#shop-presentation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 50px 20px;
+    margin: auto;
+    #shop-movie{
+        position: relative;
+        width: 321px;
+        display: flex;
+        justify-content: center;
+        video{
+            max-width: 100%;
+            border-radius: 5px;
+        }
+        > div{
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            background-color: rgba(18, 18, 15, .2);
+            box-shadow: inset 3px 2px 26px 5px $first-color;
+            transition: background-color .4s ease-in-out;
+            &.active{
+                background-color: rgba(18, 18, 15, 0);
+                .play-button{
+                    opacity: 0;
+                }
+            }
+            .play-button{
+                color: $first-color;
+                text-shadow: 0 0 3px $third-color;
+                font-size: 5rem;
+                opacity: 1;
+                transition: opacity .4s ease-in-out;
+            }
+        }
+    }
+    article{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 10px 10px 30px 10px;
+        margin-top: 30px;
+        border-left: 1px solid $second-color;
+        border-bottom: 1px solid $second-color;
+        background: top right 1px no-repeat url("../images/gold-quarter.png"), center no-repeat url("/images/Plan\ de\ travail\ 1.png");
+        h2{
+            position: relative;
+            margin-top: 20px;
+            font-size: 1.4rem;
+            font-weight: 700;
+            font-family: $important-txt;
+        }
+        h3{
+            margin-top: 10px;
+        }
+        p{
+            margin-top: 20px;
+            line-height: 22px;
+            font-size: .84rem;
+            font-weight: 400;
+            text-align: center;
+        }
+    }
+}
+
+@media screen and(min-width: 390px){
+    #shop-presentation{
+        width: 90%;
+        margin-top: 30px;
+        border-left: 1px solid $second-color;
+        border-bottom: 1px solid $second-color;
+        background: top right 1px no-repeat url("../images/gold-quarter.png");
+        article{
+            border: none;
+            background: center no-repeat url("/images/Plan\ de\ travail\ 1.png");
+            padding: 20px;
+        }
+    }
+}
+
+@media screen and(min-width: 1024px){
+    #shop-presentation{
+        margin-top: 40px;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 80%;
+        #shop-movie{
+            video{
+                min-width: 321px;
+            }
+        }
+        article{
+            width: 50%;
+            margin-top: 0;
+            h2{
+                border-bottom: 1px solid $second-color;
+                padding-bottom: 5px;
+            }
+        }
+    }
+}
+
+@media screen and(min-width: 1345px){
+    #shop-presentation{
+        width: 70%;
+    }
+}

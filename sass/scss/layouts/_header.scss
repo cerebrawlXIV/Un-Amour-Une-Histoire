@@ -1,0 +1,29 @@
+header{
+    > div{
+        @extend %header;
+        background-image: url("/images/boutique.png");
+        margin-top: -100px;
+        > div{
+            @extend %degraded-header;
+            p.company-name{
+                @extend %company-name;
+                text-shadow: 0px 0px 2px darken($second-color, 40%);
+                color: $first-color;
+                span:last-child{
+                    margin-left: 30px;
+                }
+            }
+        }
+    }
+    h1{
+        text-align: center;
+        padding: 30px 5px 0px 5px;
+        font-size: 1.3em;
+        font-weight: 700;
+        font-family: $important-txt;
+        text-transform: uppercase;
+        color: $second-color;
+        text-shadow: 0px 0px 1px darken($second-color, 30%);
+        margin-top: 15px;
+    }
+}
