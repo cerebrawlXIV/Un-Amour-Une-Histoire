@@ -1,7 +1,7 @@
 header{
     > div{
         @extend %header;
-        background-image: url("images/boutique.png");
+        background-image: url("../images/boutique.png");
         margin-top: -100px;
         > div{
             @extend %degraded-header;

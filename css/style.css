@@ -345,7 +345,7 @@ footer > div:last-child p {
   }
 }
 header > div {
-  background-image: url("/images/boutique.png");
+  background-image: url("../images/boutique.png");
   margin-top: -100px;
 }
 header > div > div p.company-name {
@@ -683,7 +683,7 @@ header h1 {
   }
   #shop-presentation article {
     border: none;
-    background: center no-repeat url("/images/Plan de travail 1.png");
+    background: center no-repeat url("../images/Plan de travail 1.png");
     padding: 20px;
   }
 }
