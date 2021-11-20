@@ -1,0 +1,298 @@
+#shop-presentation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 50px 20px;
+    margin: auto;
+    #shop-movie{
+        position: relative;
+        width: 321px;
+        display: flex;
+        justify-content: center;
+        video{
+            max-width: 100%;
+            border-radius: 5px;
+        }
+        > div{
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            background-color: rgba(18, 18, 15, .2);
+            box-shadow: inset 3px 2px 26px 5px $first-color;
+            transition: background-color .4s ease-in-out;
+            &.active{
+                background-color: rgba(18, 18, 15, 0);
+                .play-button{
+                    opacity: 0;
+                }
+            }
+            .play-button{
+                color: $first-color;
+                text-shadow: 0 0 3px $third-color;
+                font-size: 5rem;
+                opacity: 1;
+                transition: opacity .4s ease-in-out;
+            }
+        }
+    }
+    article{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 10px 10px 30px 10px;
+        margin-top: 30px;
+        border-left: 1px solid $second-color;
+        border-bottom: 1px solid $second-color;
+        background: top right 1px no-repeat url("../images/gold-quarter.png"), center no-repeat url("../images/Plan\ de\ travail\ 1.png");
+        h2{
+            @extend %shop-h2;
+            margin-top: 20px;
+            text-align: center;
+        }
+        h3{
+            margin-top: 10px;
+        }
+        p{
+            margin-top: 20px;
+            line-height: 22px;
+            font-size: .84rem;
+            font-weight: 400;
+            text-align: center;
+        }
+    }
+}
+
+#map-presentation{
+    margin: auto;
+    width: 90%;
+    h2{
+        display: inline-block;
+        padding-left: 50px;
+        @extend %shop-h2;
+        border-bottom: 1px solid $second-color;
+        padding-bottom: 5px;
+
+    }
+    > div{
+        border-left: 1px solid $second-color;
+        border-bottom: 1px solid $second-color;
+        padding: 20px 0 20px 20px;
+    }
+}
+
+#map{
+    height: 500px;
+    background: no-repeat center url("../images/carte-repere-mobile.png");
+    background-size: cover;
+    cursor: default;
+    > div{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(205, 210, 55, .15);
+    }
+}
+
+
+#map-nav{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: rgba(205, 210, 55, .8);
+    ul{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+        li{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            height: 100%;
+            width: 25%;
+            .container-icon{
+                margin-top: 20px;
+                transition: color .3s ease-in-out;
+                cursor: pointer;
+                &:hover{
+                    color: $first-color;
+                }
+            }
+            .container-icon{
+                &.active{
+                    i{
+                        color: $first-color;
+                    }
+                    p{
+                        color: $first-color;
+                    }
+                }
+            }
+            a{
+                color: $third-color;
+            }
+            i{
+                font-size: 1.5rem;
+            }
+            p{
+                position: absolute;
+                top: 35px;
+                left: 50%;
+                transform: translateX(-50%);
+                font-size: .8rem;
+                margin-top: 2px;
+                width: 100%;
+                text-align: center;
+                display: none;
+            }
+        }
+    }
+}
+
+#address{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $second-color;
+    padding: 40px;
+    border-radius: 5px;
+    text-align: center;
+    max-width: 90%;
+    opacity: 0;
+    transition: opacity .4s ease-in-out;
+    &.active{
+        opacity: 1;
+    }
+    h3{
+        font-family: $important-txt;
+        font-size: 1.1rem;
+        font-weight: bold;
+    }
+    p{
+        margin-top: 15px;
+        line-height: 20px;
+        font-size: .8rem;
+    }
+}
+
+
+@media screen and(min-width: 390px){
+    #shop-presentation{
+        width: 90%;
+        margin-top: 30px;
+        border-left: 1px solid $second-color;
+        border-bottom: 1px solid $second-color;
+        background: top right 1px no-repeat url("../images/gold-quarter.png");
+        article{
+            border: none;
+            background: center no-repeat url("../images/Plan\ de\ travail\ 1.png");
+            padding: 20px;
+        }
+    }
+    #map-presentation{
+        margin-top: 60px; 
+    }
+
+    #map-nav{
+        ul{
+            li{ 
+                .container-icon{
+                    margin-top: 10px;
+                }
+                p{
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+@media screen and(min-width: 530px){
+    #map{
+        background-image: url("/images/carte-repere-desktop.png");
+    }   
+}
+
+@media screen and(min-width: 1024px){
+    #shop-presentation{
+        margin-top: 40px;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 80%;
+        #shop-movie{
+            video{
+                min-width: 321px;
+            }
+        }
+        article{
+            width: 50%;
+            margin-top: 0;
+            h2{
+                border-bottom: 1px solid $second-color;
+                padding-bottom: 5px;
+                font-size: 1.3rem;
+            }
+        }
+    }
+
+    #map-presentation{  
+        width: 80%;
+        h2{
+            font-size: 1.3rem;
+        }
+    }
+
+    #map-nav{
+        align-items: center;
+        right: 0;
+        width: 60px;
+        height: 100%;
+        ul{
+            flex-direction: column;
+            height: 100%;
+            width: 100%;
+            li{
+                align-items: center;
+                width: 100%;
+                p{
+                    top: 80px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    #address{
+        h3{
+            font-size: 1.3rem;
+        }
+        p{
+            font-size: .9rem;
+        }
+    }  
+}
+
+@media screen and(min-width: 1345px){
+    #shop-presentation{
+        width: 70%;
+    }
+
+    #map-presentation{
+        width: 70%;
+    }
+}

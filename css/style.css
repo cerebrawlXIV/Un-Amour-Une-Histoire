@@ -47,6 +47,12 @@ header > div > div {
   font-weight: 700;
 }
 
+#map-presentation h2, #shop-presentation article h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  font-family: "Cormorant Garamond";
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -350,7 +356,7 @@ header > div {
 }
 header > div > div p.company-name {
   text-shadow: 0px 0px 2px #31320b;
-  color: whitesmoke;
+  color: #12120f;
 }
 header > div > div p.company-name span:last-child {
   margin-left: 30px;
@@ -358,7 +364,7 @@ header > div > div p.company-name span:last-child {
 header h1 {
   text-align: center;
   padding: 30px 5px 0px 5px;
-  font-size: 1.3em;
+  font-size: 1.1em;
   font-weight: 700;
   font-family: "Cormorant Garamond";
   text-transform: uppercase;
@@ -367,6 +373,11 @@ header h1 {
   margin-top: 15px;
 }
 
+@media screen and (min-width: 1024px) {
+  header h1 {
+    font-size: 1.2em;
+  }
+}
 #index-header {
   width: 100%;
   height: 100vh;
@@ -653,14 +664,11 @@ header h1 {
   margin-top: 30px;
   border-left: 1px solid #cdd237;
   border-bottom: 1px solid #cdd237;
-  background: top right 1px no-repeat url("../images/gold-quarter.png"), center no-repeat url("/images/Plan de travail 1.png");
+  background: top right 1px no-repeat url("../images/gold-quarter.png"), center no-repeat url("../images/Plan de travail 1.png");
 }
 #shop-presentation article h2 {
-  position: relative;
   margin-top: 20px;
-  font-size: 1.4rem;
-  font-weight: 700;
-  font-family: "Cormorant Garamond";
+  text-align: center;
 }
 #shop-presentation article h3 {
   margin-top: 10px;
@@ -671,6 +679,119 @@ header h1 {
   font-size: 0.84rem;
   font-weight: 400;
   text-align: center;
+}
+
+#map-presentation {
+  margin: auto;
+  width: 90%;
+}
+#map-presentation h2 {
+  display: inline-block;
+  padding-left: 50px;
+  border-bottom: 1px solid #cdd237;
+  padding-bottom: 5px;
+}
+#map-presentation > div {
+  border-left: 1px solid #cdd237;
+  border-bottom: 1px solid #cdd237;
+  padding: 20px 0 20px 20px;
+}
+
+#map {
+  height: 500px;
+  background: no-repeat center url("../images/carte-repere-mobile.png");
+  background-size: cover;
+  cursor: default;
+}
+#map > div {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(205, 210, 55, 0.15);
+}
+
+#map-nav {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background-color: rgba(205, 210, 55, 0.8);
+}
+#map-nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+#map-nav ul li {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 25%;
+}
+#map-nav ul li .container-icon {
+  margin-top: 20px;
+  transition: color 0.3s ease-in-out;
+  cursor: pointer;
+}
+#map-nav ul li .container-icon:hover {
+  color: whitesmoke;
+}
+#map-nav ul li .container-icon.active i {
+  color: whitesmoke;
+}
+#map-nav ul li .container-icon.active p {
+  color: whitesmoke;
+}
+#map-nav ul li a {
+  color: #12120f;
+}
+#map-nav ul li i {
+  font-size: 1.5rem;
+}
+#map-nav ul li p {
+  position: absolute;
+  top: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.8rem;
+  margin-top: 2px;
+  width: 100%;
+  text-align: center;
+  display: none;
+}
+
+#address {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #cdd237;
+  padding: 40px;
+  border-radius: 5px;
+  text-align: center;
+  max-width: 90%;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+#address.active {
+  opacity: 1;
+}
+#address h3 {
+  font-family: "Cormorant Garamond";
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+#address p {
+  margin-top: 15px;
+  line-height: 20px;
+  font-size: 0.8rem;
 }
 
 @media screen and (min-width: 390px) {
@@ -685,6 +806,22 @@ header h1 {
     border: none;
     background: center no-repeat url("../images/Plan de travail 1.png");
     padding: 20px;
+  }
+
+  #map-presentation {
+    margin-top: 60px;
+  }
+
+  #map-nav ul li .container-icon {
+    margin-top: 10px;
+  }
+  #map-nav ul li p {
+    display: block;
+  }
+}
+@media screen and (min-width: 530px) {
+  #map {
+    background-image: url("/images/carte-repere-desktop.png");
   }
 }
 @media screen and (min-width: 1024px) {
@@ -704,10 +841,49 @@ header h1 {
   #shop-presentation article h2 {
     border-bottom: 1px solid #cdd237;
     padding-bottom: 5px;
+    font-size: 1.3rem;
+  }
+
+  #map-presentation {
+    width: 80%;
+  }
+  #map-presentation h2 {
+    font-size: 1.3rem;
+  }
+
+  #map-nav {
+    align-items: center;
+    right: 0;
+    width: 60px;
+    height: 100%;
+  }
+  #map-nav ul {
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+  }
+  #map-nav ul li {
+    align-items: center;
+    width: 100%;
+  }
+  #map-nav ul li p {
+    top: 80px;
+    text-align: center;
+  }
+
+  #address h3 {
+    font-size: 1.3rem;
+  }
+  #address p {
+    font-size: 0.9rem;
   }
 }
 @media screen and (min-width: 1345px) {
   #shop-presentation {
+    width: 70%;
+  }
+
+  #map-presentation {
     width: 70%;
   }
 }
