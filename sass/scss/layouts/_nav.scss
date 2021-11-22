@@ -7,9 +7,9 @@
     z-index: 2;
     height: 100px; // Identique au margin-top du header (en négatif)
     background: linear-gradient(180deg, 
-        rgba(245, 245, 245,1) 0%, 
-        rgba(245, 245, 245,.8) 35%, 
-        rgba(245, 245, 245, 0) 100%);
+        $first-color 0%, 
+        opacity($first-color, .8) 35%, 
+        opacity($first-color, 0) 100%);
     ul{
         height: 100%;
         display: flex;

@@ -29,7 +29,7 @@ header > div {
   height: 300px;
   background-size: cover;
   background-position: center;
-  box-shadow: inset -2px -5px 15px 7px whitesmoke;
+  box-shadow: inset 0px -14px 18px -7px whitesmoke;
 }
 
 header > div > div {
@@ -38,7 +38,7 @@ header > div > div {
   align-items: center;
   width: 100%;
   height: 100%;
-  background: linear-gradient(180deg, whitesmoke 0%, rgba(245, 245, 245, 0.8) 15%, rgba(206, 210, 55, 0.5) 45%, rgba(245, 245, 245, 0) 100%);
+  background: linear-gradient(180deg, whitesmoke 0%, rgba(245, 245, 245, 0.8) 15%, rgba(191, 196, 44, 0.5) 45%, rgba(245, 245, 245, 0) 100%);
 }
 
 #index-header .degraded-header h1, header > div > div p.company-name {
@@ -47,7 +47,7 @@ header > div > div {
   font-weight: 700;
 }
 
-#map-presentation h2, #shop-presentation article h2 {
+#opinion .opinion-title h2, #shop-hours h2, #map-presentation h2, #shop-presentation article h2 {
   font-size: 1.2rem;
   font-weight: 700;
   font-family: "Cormorant Garamond";
@@ -148,11 +148,11 @@ body {
 }
 .burger.active span::before {
   transform: translateY(0) rotate(45deg);
-  background-color: #cdd237;
+  background-color: #bfc42c;
 }
 .burger.active span::after {
   transform: translateY(0) rotate(-45deg);
-  background-color: #cdd237;
+  background-color: #bfc42c;
 }
 
 @media screen and (min-width: 1024px) {
@@ -182,7 +182,7 @@ body {
 #desktop-nav ul li a {
   display: inline-block;
   padding-bottom: 5px;
-  color: #cdd237;
+  color: #bfc42c;
   font-size: 1.4rem;
   font-weight: 500;
   text-shadow: 0 0 1px #12120f;
@@ -249,7 +249,7 @@ body {
   font-size: 1.6rem;
   text-shadow: 0 0 1px whitesmoke;
   padding-bottom: 10px;
-  border-bottom: 1px solid #cdd237;
+  border-bottom: 1px solid #bfc42c;
 }
 
 @media screen and (min-width: 1024px) {
@@ -271,12 +271,12 @@ footer h3 {
   font-size: 1.05rem;
   padding: 20px;
   text-align: center;
-  background-color: #cdd237;
+  background-color: #bfc42c;
   margin-bottom: -1px;
   line-height: 20px;
 }
 footer #information {
-  background-color: #cdd237;
+  background-color: #bfc42c;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -308,6 +308,17 @@ footer #information #contact {
   align-items: center;
   width: 90%;
   margin-bottom: 20px;
+}
+footer #information #contact a {
+  display: flex;
+  align-items: center;
+  color: #12120f;
+  text-decoration: none;
+  font-size: 0.9rem;
+  margin-top: 15px;
+}
+footer #information #contact a i {
+  margin-right: 7px;
 }
 footer #information #contact p {
   margin-top: 15px;
@@ -355,7 +366,7 @@ header > div {
   margin-top: -100px;
 }
 header > div > div p.company-name {
-  text-shadow: 0px 0px 2px #31320b;
+  text-shadow: 0px 0px 2px #1c1d07;
   color: #12120f;
 }
 header > div > div p.company-name span:last-child {
@@ -366,10 +377,8 @@ header h1 {
   padding: 30px 5px 0px 5px;
   font-size: 1.1em;
   font-weight: 700;
-  font-family: "Cormorant Garamond";
   text-transform: uppercase;
-  color: #cdd237;
-  text-shadow: 0px 0px 1px #595b15;
+  color: #bfc42c;
   margin-top: 15px;
 }
 
@@ -393,13 +402,13 @@ header h1 {
   align-items: center;
   width: 100%;
   height: 100%;
-  background: linear-gradient(180deg, whitesmoke 0%, rgba(245, 245, 245, 0.8) 15%, rgba(206, 210, 55, 0.5) 45%, rgba(245, 245, 245, 0) 100%);
+  background: linear-gradient(180deg, whitesmoke 0%, rgba(245, 245, 245, 0.8) 15%, rgba(191, 196, 44, 0.5) 45%, rgba(245, 245, 245, 0) 100%);
 }
 #index-header .degraded-header h1 {
   opacity: 1;
   transition: opacity 0.5s ease-in-out 0.3s;
   color: whitesmoke;
-  text-shadow: 0px 0px 2px #595b15;
+  text-shadow: 0px 0px 2px #454710;
 }
 #index-header .degraded-header h1 .first-part {
   animation: titleappearance 2s ease-in;
@@ -421,8 +430,8 @@ header h1 {
   margin: 40px auto;
   padding: 15px 0px 20px 0;
   background: top right 1px no-repeat url("../images/gold-quarter.png");
-  border-left: 1px solid #cdd237;
-  border-bottom: 1px solid #cdd237;
+  border-left: 1px solid #bfc42c;
+  border-bottom: 1px solid #bfc42c;
 }
 #presentation article {
   display: flex;
@@ -448,7 +457,7 @@ header h1 {
   line-height: 22px;
 }
 #presentation article p .gold-text {
-  color: #cdd237;
+  color: #bfc42c;
 }
 #presentation aside {
   display: none;
@@ -510,7 +519,7 @@ header h1 {
   font-size: 1.5rem;
   font-weight: 700;
   font-family: "Cormorant Garamond";
-  border-bottom: 1px solid #cdd237;
+  border-bottom: 1px solid #bfc42c;
   width: 70%;
   text-align: center;
 }
@@ -535,7 +544,7 @@ header h1 {
   }
   #index-header .degraded-header {
     justify-content: flex-start;
-    background: linear-gradient(180deg, whitesmoke 0%, rgba(245, 245, 245, 0.8) 15%, rgba(206, 210, 55, 0.3) 45%, rgba(245, 245, 245, 0) 100%);
+    background: linear-gradient(180deg, whitesmoke 0%, rgba(245, 245, 245, 0.8) 15%, rgba(191, 196, 44, 0.3) 45%, rgba(245, 245, 245, 0) 100%);
   }
   #index-header .degraded-header h1 {
     margin-top: calc(100vh / 4);
@@ -615,7 +624,7 @@ header h1 {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  padding: 50px 20px;
+  padding: 30px 20px 20px 20px;
   margin: auto;
 }
 #shop-presentation #shop-movie {
@@ -662,8 +671,8 @@ header h1 {
   width: 100%;
   padding: 10px 10px 30px 10px;
   margin-top: 30px;
-  border-left: 1px solid #cdd237;
-  border-bottom: 1px solid #cdd237;
+  border-left: 1px solid #bfc42c;
+  border-bottom: 1px solid #bfc42c;
   background: top right 1px no-repeat url("../images/gold-quarter.png"), center no-repeat url("../images/Plan de travail 1.png");
 }
 #shop-presentation article h2 {
@@ -688,12 +697,12 @@ header h1 {
 #map-presentation h2 {
   display: inline-block;
   padding-left: 50px;
-  border-bottom: 1px solid #cdd237;
+  border-bottom: 1px solid #bfc42c;
   padding-bottom: 5px;
 }
 #map-presentation > div {
-  border-left: 1px solid #cdd237;
-  border-bottom: 1px solid #cdd237;
+  border-left: 1px solid #bfc42c;
+  border-bottom: 1px solid #bfc42c;
   padding: 20px 0 20px 20px;
 }
 
@@ -710,7 +719,7 @@ header h1 {
   align-items: center;
   width: 100%;
   height: 100%;
-  background-color: rgba(205, 210, 55, 0.15);
+  background-color: rgba(191, 196, 44, 0.15);
 }
 
 #map-nav {
@@ -721,7 +730,7 @@ header h1 {
   bottom: 0;
   width: 100%;
   height: 60px;
-  background-color: rgba(205, 210, 55, 0.8);
+  background-color: rgba(191, 196, 44, 0.8);
 }
 #map-nav ul {
   display: flex;
@@ -772,7 +781,7 @@ header h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #cdd237;
+  background-color: #bfc42c;
   padding: 40px;
   border-radius: 5px;
   text-align: center;
@@ -788,18 +797,259 @@ header h1 {
   font-size: 1.1rem;
   font-weight: bold;
 }
+#address a {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  text-decoration: none;
+  color: #12120f;
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+#address a i {
+  color: whitesmoke;
+  margin-right: 10px;
+  font-size: 1.2rem;
+}
 #address p {
   margin-top: 15px;
   line-height: 20px;
   font-size: 0.8rem;
 }
 
+#opinion-hours {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  margin-top: 40px;
+}
+
+#shop-hours {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 20px;
+  width: 100%;
+}
+#shop-hours::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-top: 1px solid #bfc42c;
+  border-right: 1px solid #bfc42c;
+  width: 60px;
+  height: 60px;
+}
+#shop-hours::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-left: 1px solid #bfc42c;
+  border-bottom: 1px solid #bfc42c;
+  width: 60px;
+  height: 60px;
+}
+#shop-hours h2 {
+  padding-bottom: 5px;
+  border-bottom: 1px solid #bfc42c;
+}
+#shop-hours p {
+  font-size: 0.85rem;
+  margin-top: 15px;
+}
+#shop-hours a {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  text-decoration: none;
+  color: #12120f;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+#shop-hours a i {
+  color: #bfc42c;
+  margin-right: 10px;
+  font-size: 1.2rem;
+}
+
+#opinion {
+  position: relative;
+  cursor: default;
+  margin-top: 80px;
+  width: 100%;
+  height: 400px;
+  background: url(../images/avis-fond.jpg) bottom no-repeat;
+  background-size: cover;
+}
+#opinion .opinion-title {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  width: 80px;
+  height: 80px;
+  padding: 5px;
+  background-color: whitesmoke;
+  z-index: 2;
+}
+#opinion .opinion-title h2 {
+  text-align: center;
+  border: 1px solid #bfc42c;
+  padding: 5px;
+}
+#opinion .opinion-title h2 a {
+  color: #12120f;
+  text-decoration: none;
+}
+#opinion .opinion-button {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  z-index: 2;
+}
+#opinion .opinion-button i {
+  font-size: 3rem;
+  padding: 8px;
+  color: #969a23;
+  cursor: pointer;
+}
+#opinion .opinion-button-left::after {
+  content: "";
+  position: absolute;
+  top: -168px;
+  left: 0;
+  height: 400px;
+  width: 30px;
+  background: linear-gradient(90deg, #a2a625 0%, rgba(191, 196, 44, 0) 100%);
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+#opinion .opinion-button-left:hover::after {
+  opacity: 1;
+}
+#opinion .opinion-button-right::after {
+  content: "";
+  position: absolute;
+  top: -168px;
+  right: 0;
+  height: 400px;
+  width: 30px;
+  background: linear-gradient(270deg, #a2a625 0%, rgba(191, 196, 44, 0) 100%);
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+  z-index: 2;
+}
+#opinion .opinion-button-right:hover::after {
+  opacity: 1;
+}
+#opinion .opinion-container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(191, 196, 44, 0.9);
+  padding: 20px;
+}
+#opinion .opinion-container .opinion-card {
+  position: relative;
+  height: 100%;
+  border-top: 1px solid whitesmoke;
+  border-right: 1px solid whitesmoke;
+  text-overflow: ellipsis;
+}
+#opinion .opinion-container .opinion-card::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 80px;
+  width: 120px;
+  border-bottom: 1px solid whitesmoke;
+  border-left: 1px solid whitesmoke;
+}
+#opinion .opinion-container .opinion-card .card {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  transition: opacity 0.4s ease-in-out;
+}
+#opinion .opinion-container .opinion-card .card.active {
+  opacity: 1;
+}
+#opinion .opinion-container .opinion-card .card.last-card p {
+  font-size: 0.8rem;
+  font-weight: 500;
+  line-height: 22px;
+  text-align: center;
+  padding-top: 15px;
+}
+#opinion .opinion-container .opinion-card .card.last-card p a {
+  color: #12120f;
+  text-decoration: none;
+  font-weight: 700;
+}
+#opinion .opinion-container .opinion-card .top-area {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#opinion .opinion-container .opinion-card .top-area div:first-child {
+  margin-left: 20px;
+}
+#opinion .opinion-container .opinion-card .top-area div:first-child img {
+  box-shadow: 0px 0px 5px #12120f;
+  border-radius: 50%;
+}
+#opinion .opinion-container .opinion-card .top-area > div:last-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 8px 0px 8px 20px;
+}
+#opinion .opinion-container .opinion-card .top-area > div:last-child p {
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+#opinion .opinion-container .opinion-card .top-area > div:last-child .star-area {
+  margin-top: 5px;
+  color: whitesmoke;
+}
+#opinion .opinion-container .opinion-card .top-area > div:last-child .star-area i {
+  margin-left: 3px;
+}
+#opinion .opinion-container .opinion-card .bottom-area {
+  display: flex;
+  align-items: center;
+}
+#opinion .opinion-container .opinion-card .bottom-area p {
+  max-height: 200px;
+  margin-top: 5px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  line-height: 20px;
+  overflow: hidden;
+  text-align: center;
+}
+
 @media screen and (min-width: 390px) {
   #shop-presentation {
     width: 90%;
     margin-top: 30px;
-    border-left: 1px solid #cdd237;
-    border-bottom: 1px solid #cdd237;
+    border-left: 1px solid #bfc42c;
+    border-bottom: 1px solid #bfc42c;
     background: top right 1px no-repeat url("../images/gold-quarter.png");
   }
   #shop-presentation article {
@@ -818,15 +1068,42 @@ header h1 {
   #map-nav ul li p {
     display: block;
   }
+
+  #opinion .opinion-container .opinion-card .top-area {
+    flex-direction: row;
+  }
+  #opinion .opinion-container .opinion-card .bottom-area {
+    margin-top: 10px;
+  }
+  #opinion .opinion-container .opinion-card .bottom-area p {
+    max-height: 240px;
+  }
 }
 @media screen and (min-width: 530px) {
   #map {
-    background-image: url("/images/carte-repere-desktop.png");
+    background-image: url("../images/carte-repere-desktop.png");
+  }
+}
+@media screen and (min-width: 700px) {
+  #opinion-hours {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #shop-hours {
+    width: 48%;
+  }
+
+  #opinion {
+    width: 48%;
+    margin-top: 0;
   }
 }
 @media screen and (min-width: 1024px) {
   #shop-presentation {
     margin-top: 40px;
+    padding-top: 0px;
     flex-direction: row;
     justify-content: space-around;
     width: 80%;
@@ -839,7 +1116,7 @@ header h1 {
     margin-top: 0;
   }
   #shop-presentation article h2 {
-    border-bottom: 1px solid #cdd237;
+    border-bottom: 1px solid #bfc42c;
     padding-bottom: 5px;
     font-size: 1.3rem;
   }
@@ -854,12 +1131,12 @@ header h1 {
   #map-nav {
     align-items: center;
     right: 0;
-    width: 60px;
     height: 100%;
+    width: 60px;
   }
   #map-nav ul {
+    display: flex;
     flex-direction: column;
-    height: 100%;
     width: 100%;
   }
   #map-nav ul li {
@@ -877,6 +1154,21 @@ header h1 {
   #address p {
     font-size: 0.9rem;
   }
+  #address a {
+    font-size: 0.9rem;
+  }
+
+  #opinion-hours {
+    width: 80%;
+  }
+
+  #shop-hours {
+    width: 45%;
+  }
+
+  #opinion {
+    width: 45%;
+  }
 }
 @media screen and (min-width: 1345px) {
   #shop-presentation {
@@ -885,6 +1177,19 @@ header h1 {
 
   #map-presentation {
     width: 70%;
+  }
+
+  #opinion-hours {
+    justify-content: space-around;
+    width: 70%;
+  }
+
+  #shop-hours {
+    width: 40%;
+  }
+
+  #opinion {
+    width: 40%;
   }
 }
 

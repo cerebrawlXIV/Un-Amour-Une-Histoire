@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    padding: 50px 20px;
+    padding: 30px 20px 20px 20px;
     margin: auto;
     #shop-movie{
         position: relative;
@@ -100,7 +100,7 @@
         align-items: center;
         width: 100%;
         height: 100%;
-        background-color: rgba(205, 210, 55, .15);
+        background-color: opacity($second-color, .15);
     }
 }
 
@@ -113,7 +113,7 @@
     bottom: 0;
     width: 100%;
     height: 60px;
-    background-color: rgba(205, 210, 55, .8);
+    background-color: opacity($second-color, .8);
     ul{
         display: flex;
         justify-content: space-around;
@@ -183,6 +183,20 @@
         font-size: 1.1rem;
         font-weight: bold;
     }
+    a{
+        display: flex;
+        align-items: center;
+        margin-top: 15px;
+        text-decoration: none;
+        color: $third-color;
+        font-weight: 700;
+        font-size: .8rem;
+        i{
+            color: $first-color;
+            margin-right: 10px;
+            font-size: 1.2rem;
+        }  
+    }
     p{
         margin-top: 15px;
         line-height: 20px;
@@ -190,6 +204,237 @@
     }
 }
 
+#opinion-hours{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    margin-top: 40px;
+}
+
+#shop-hours{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+    width: 100%;
+    &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        border-top: 1px solid $second-color;
+        border-right: 1px solid $second-color;
+        width: 60px;
+        height: 60px;
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        border-left: 1px solid $second-color;
+        border-bottom: 1px solid $second-color;
+        width: 60px;
+        height: 60px;
+    }
+    h2{
+        @extend %shop-h2;
+        padding-bottom: 5px;
+        border-bottom: 1px solid $second-color;
+    }
+    p{
+        font-size: .85rem;
+        margin-top: 15px;
+    }
+    a{
+        display: flex;
+        align-items: center;
+        margin-top: 15px;
+        text-decoration: none;
+        color: $third-color;
+        font-weight: 700;
+        font-size: .9rem;
+        i{
+            color: $second-color;
+            margin-right: 10px;
+            font-size: 1.2rem;
+        }
+    }
+}
+
+#opinion{
+    position: relative;
+    cursor: default;
+    margin-top: 80px;
+    width: 100%;
+    height: 400px;
+    background: url(../images/avis-fond.jpg) bottom no-repeat;
+    background-size: cover;
+    .opinion-title{
+        position: absolute;
+        top: -20px;
+        right: -20px;
+        width: 80px;
+        height: 80px;
+        padding: 5px;
+        background-color: $first-color;
+        z-index: 2;
+        h2{
+            @extend %shop-h2;
+            text-align: center;
+            border: 1px solid $second-color;
+            padding: 5px;
+            a{
+                color: $third-color;
+                text-decoration: none;
+            }
+        }
+    }
+    .opinion-button{
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        display: flex;
+        justify-content: space-between;  
+        width: 100%; 
+        z-index: 2;
+        i{
+            font-size: 3rem;
+            padding: 8px;
+            color: darken($second-color, 10%);
+            cursor: pointer;
+        }
+        &-left::after{
+            content:'';
+            position: absolute;
+            top: -168px;
+            left: 0;
+            height: 400px;
+            width: 30px;
+            background: linear-gradient(90deg, darken($second-color, 7%) 0%, opacity($second-color, .0) 100%);
+            opacity: 0;
+            transition: opacity .4s ease-in-out;
+        }
+        &-left:hover::after{
+            opacity: 1;
+        }
+
+        &-right::after{
+            content:'';
+            position: absolute;
+            top: -168px;
+            right: 0;
+            height: 400px;
+            width: 30px;
+            background: linear-gradient(270deg, darken($second-color, 7%) 0%, opacity($second-color, .0) 100%);
+            opacity: 0;
+            transition: opacity .4s ease-in-out;
+            z-index: 2;
+        }
+        &-right:hover::after{
+            opacity: 1;
+        }
+    }
+    .opinion-container{
+        position: relative; // A CORRIGER
+        height: 100%;
+        width: 100%;
+        background-color:opacity($second-color, .9);
+        padding: 20px;
+        .opinion-card{ // A CORRIGER
+            position: relative; // A CORRIGER
+            height: 100%;
+            border-top: 1px solid $first-color;
+            border-right: 1px solid $first-color;
+            text-overflow: ellipsis;
+            &::after{
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                height: 80px;
+                width: 120px;
+                border-bottom: 1px solid $first-color;
+                border-left: 1px solid $first-color;
+            }
+            .card{
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                opacity: 0;
+                height: 100%;
+                width: 100%;
+                padding: 20px;
+                transition: opacity .4s ease-in-out;
+                &.active{
+                    opacity: 1;
+                }
+                &.last-card{
+                    p{
+                        font-size: .8rem;
+                        font-weight: 500;
+                        line-height: 22px;
+                        text-align: center;
+                        padding-top: 15px;
+                        a{
+                            color: $third-color;
+                            text-decoration: none;
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
+            .top-area{
+                margin-top: 10px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                div:first-child{
+                    margin-left: 20px;
+                    img{
+                        box-shadow: 0px 0px 5px $third-color;
+                        border-radius: 50%;
+                    }
+                }
+                > div:last-child{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    margin: 8px 0px 8px 20px;
+                    p{
+                        font-weight: 700;
+                        font-size: .9rem;
+                    }
+                    .star-area{
+                        margin-top: 5px;
+                        color: $first-color;
+                        i{
+                            margin-left: 3px;
+                        }
+                    }
+                }
+            }
+            .bottom-area{
+                display: flex;
+                align-items: center;
+                p{
+                    max-height: 200px;
+                    margin-top: 5px;
+                    font-size: .8rem;
+                    font-weight: 500;
+                    line-height: 20px;
+                    overflow: hidden;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
 
 @media screen and(min-width: 390px){
     #shop-presentation{
@@ -220,6 +465,22 @@
             }
         }
     }
+    #opinion{
+        .opinion-container{
+            .opinion-card{
+                .top-area{
+                    flex-direction: row;
+                }
+                .bottom-area{
+                    margin-top: 10px;
+                    p{
+                        max-height: 240px;
+                    }
+                }
+            }
+        }
+    }
+
 }
 
 @media screen and(min-width: 530px){
@@ -228,9 +489,27 @@
     }   
 }
 
+@media screen and(min-width: 700px){
+    #opinion-hours{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #shop-hours{
+        width: 48%;
+    }
+
+    #opinion{
+        width: 48%;
+        margin-top: 0;
+    }
+}
+
 @media screen and(min-width: 1024px){
     #shop-presentation{
         margin-top: 40px;
+        padding-top: 0px;
         flex-direction: row;
         justify-content: space-around;
         width: 80%;
@@ -259,13 +538,14 @@
 
     #map-nav{
         align-items: center;
-        right: 0;
-        width: 60px;
+        right: 0; 
         height: 100%;
+        width: 60px;
         ul{
+            display: flex;
             flex-direction: column;
-            height: 100%;
             width: 100%;
+
             li{
                 align-items: center;
                 width: 100%;
@@ -284,7 +564,22 @@
         p{
             font-size: .9rem;
         }
+        a{
+            font-size: .9rem;
+        }
     }  
+
+    #opinion-hours{
+        width: 80%;
+    }
+
+    #shop-hours{
+        width: 45%;
+    }
+
+    #opinion{
+        width: 45%;
+    }
 }
 
 @media screen and(min-width: 1345px){
@@ -294,5 +589,18 @@
 
     #map-presentation{
         width: 70%;
+    }
+
+    #opinion-hours{
+        justify-content: space-around;
+        width: 70%;
+    }
+
+    #shop-hours{
+        width: 40%;
+    }
+
+    #opinion{
+        width: 40%;
     }
 }
