@@ -38,7 +38,7 @@ header > div > div {
   align-items: center;
   width: 100%;
   height: 100%;
-  background: linear-gradient(180deg, whitesmoke 0%, rgba(245, 245, 245, 0.8) 15%, rgba(191, 196, 44, 0.5) 45%, rgba(245, 245, 245, 0) 100%);
+  background: linear-gradient(180deg, whitesmoke 0%, rgba(245, 245, 245, 0.8) 15%, rgba(205, 200, 55, 0.5) 45%, rgba(245, 245, 245, 0) 100%);
 }
 
 #index-header .degraded-header h1, header > div > div p.company-name {
@@ -110,6 +110,7 @@ table {
 body {
   font-family: "Raleway";
   background-color: whitesmoke;
+  color: #12120f;
 }
 
 .burger-container {
@@ -148,11 +149,11 @@ body {
 }
 .burger.active span::before {
   transform: translateY(0) rotate(45deg);
-  background-color: #bfc42c;
+  background-color: #cdc837;
 }
 .burger.active span::after {
   transform: translateY(0) rotate(-45deg);
-  background-color: #bfc42c;
+  background-color: #cdc837;
 }
 
 @media screen and (min-width: 1024px) {
@@ -182,7 +183,7 @@ body {
 #desktop-nav ul li a {
   display: inline-block;
   padding-bottom: 5px;
-  color: #bfc42c;
+  color: #cdc837;
   font-size: 1.4rem;
   font-weight: 500;
   text-shadow: 0 0 1px #12120f;
@@ -230,7 +231,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   height: 50%;
-  padding-top: 10%;
+  padding-top: 20px;
   cursor: pointer;
 }
 #mobile-nav ul li {
@@ -246,10 +247,10 @@ body {
   transition: letter-spacing 0.3s ease-in-out;
   color: #12120f;
   font-weight: 700;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   text-shadow: 0 0 1px whitesmoke;
   padding-bottom: 10px;
-  border-bottom: 1px solid #bfc42c;
+  border-bottom: 1px solid #cdc837;
 }
 
 @media screen and (min-width: 1024px) {
@@ -271,12 +272,12 @@ footer h3 {
   font-size: 1.05rem;
   padding: 20px;
   text-align: center;
-  background-color: #bfc42c;
+  background-color: #cdc837;
   margin-bottom: -1px;
   line-height: 20px;
 }
 footer #information {
-  background-color: #bfc42c;
+  background-color: #cdc837;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -362,11 +363,11 @@ footer > div:last-child p {
   }
 }
 header > div {
-  background-image: url("../images/boutique.png");
+  background-image: url("../images/fond/boutique.png");
   margin-top: -100px;
 }
 header > div > div p.company-name {
-  text-shadow: 0px 0px 2px #1c1d07;
+  text-shadow: 0px 0px 2px #2d2c0b;
   color: #12120f;
 }
 header > div > div p.company-name span:last-child {
@@ -378,7 +379,7 @@ header h1 {
   font-size: 1.1em;
   font-weight: 700;
   text-transform: uppercase;
-  color: #bfc42c;
+  color: #cdc837;
   margin-top: 15px;
 }
 
@@ -390,7 +391,7 @@ header h1 {
 #index-header {
   width: 100%;
   height: 100vh;
-  background-image: url("../images/married-couple-background-small.jpg");
+  background-image: url("../images/fond/married-couple-background-small.jpg");
   background-size: cover;
   box-shadow: inset -2px -5px 31px 15px whitesmoke;
   margin-top: -100px;
@@ -402,13 +403,13 @@ header h1 {
   align-items: center;
   width: 100%;
   height: 100%;
-  background: linear-gradient(180deg, whitesmoke 0%, rgba(245, 245, 245, 0.8) 15%, rgba(191, 196, 44, 0.5) 45%, rgba(245, 245, 245, 0) 100%);
+  background: linear-gradient(180deg, whitesmoke 0%, rgba(245, 245, 245, 0.8) 15%, rgba(205, 200, 55, 0.5) 45%, rgba(245, 245, 245, 0) 100%);
 }
 #index-header .degraded-header h1 {
   opacity: 1;
   transition: opacity 0.5s ease-in-out 0.3s;
   color: whitesmoke;
-  text-shadow: 0px 0px 2px #454710;
+  text-shadow: 0px 0px 2px #565315;
 }
 #index-header .degraded-header h1 .first-part {
   animation: titleappearance 2s ease-in;
@@ -416,22 +417,31 @@ header h1 {
 #index-header .degraded-header h1 .second-part {
   opacity: 0;
   animation: titleappearance 2s ease-in 2s forwards;
-  margin-left: 30px;
 }
 #index-header .degraded-header h1.disabled {
   opacity: 0;
 }
 
 #presentation {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 90%;
   margin: 40px auto;
-  padding: 15px 0px 20px 0;
-  background: top right 1px no-repeat url("../images/gold-quarter.png");
-  border-left: 1px solid #bfc42c;
-  border-bottom: 1px solid #bfc42c;
+  padding: 20px 0px;
+  border-left: 1px solid #cdc837;
+  border-bottom: 1px solid #cdc837;
+}
+#presentation::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 180px;
+  border-top: 1px solid #cdc837;
+  border-right: 1px solid #cdc837;
 }
 #presentation article {
   display: flex;
@@ -457,7 +467,7 @@ header h1 {
   line-height: 22px;
 }
 #presentation article p .gold-text {
-  color: #bfc42c;
+  color: #cdc837;
 }
 #presentation aside {
   display: none;
@@ -478,12 +488,30 @@ header h1 {
   position: absolute;
   top: 0;
   left: 50%;
-  background: top 1px left 1px no-repeat url("../images/gold-quarter-left-top.png"), right 1px top 40px no-repeat url("../images/gold-quarter-right.png");
   padding: 20px;
   width: 100%;
   transform: translateX(-50%);
   opacity: 0;
   transition: opacity 2s;
+}
+.slider-container .slider .slide::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 180px;
+  border-top: 1px solid #cdc837;
+  border-left: 1px solid #cdc837;
+}
+.slider-container .slider .slide::before {
+  content: "";
+  position: absolute;
+  top: 60px;
+  right: 0;
+  width: 5px;
+  height: 180px;
+  border-right: 1px solid #cdc837;
 }
 .slider-container .slider .slide.active {
   opacity: 1;
@@ -519,7 +547,7 @@ header h1 {
   font-size: 1.5rem;
   font-weight: 700;
   font-family: "Cormorant Garamond";
-  border-bottom: 1px solid #bfc42c;
+  border-bottom: 1px solid #cdc837;
   width: 70%;
   text-align: center;
 }
@@ -539,12 +567,12 @@ header h1 {
 
 @media screen and (min-width: 1024px) {
   #index-header {
-    background-image: url("../images/married-couple-background-medium.jpg");
+    background-image: url("../images/fond/married-couple-background-medium.jpg");
     background-position: center;
   }
   #index-header .degraded-header {
     justify-content: flex-start;
-    background: linear-gradient(180deg, whitesmoke 0%, rgba(245, 245, 245, 0.8) 15%, rgba(191, 196, 44, 0.3) 45%, rgba(245, 245, 245, 0) 100%);
+    background: linear-gradient(180deg, whitesmoke 0%, rgba(245, 245, 245, 0.8) 15%, rgba(205, 200, 55, 0.3) 45%, rgba(245, 245, 245, 0) 100%);
   }
   #index-header .degraded-header h1 {
     margin-top: calc(100vh / 4);
@@ -566,10 +594,19 @@ header h1 {
   }
 
   #presentation {
-    background: top right 1px no-repeat url("../images/gold-quarter-big.png");
     margin-top: 70px;
     width: 80%;
     padding-bottom: 40px;
+  }
+  #presentation::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 180px;
+    height: 60px;
+    border-top: 1px solid #cdc837;
+    border-right: 1px solid #cdc837;
   }
 
   #mobile-slider {
@@ -591,7 +628,7 @@ header h1 {
 }
 @media screen and (min-width: 1345px) {
   #index-header {
-    background-image: url("../images/married-couple-background-big.jpeg");
+    background-image: url("../images/fond/married-couple-background-big.jpeg");
   }
   #index-header .degraded-header h1 {
     margin-left: 30%;
@@ -665,15 +702,25 @@ header h1 {
   transition: opacity 0.4s ease-in-out;
 }
 #shop-presentation article {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
   padding: 10px 10px 30px 10px;
   margin-top: 30px;
-  border-left: 1px solid #bfc42c;
-  border-bottom: 1px solid #bfc42c;
-  background: top right 1px no-repeat url("../images/gold-quarter.png"), center no-repeat url("../images/Plan de travail 1.png");
+  border-left: 1px solid #cdc837;
+  border-bottom: 1px solid #cdc837;
+}
+#shop-presentation article::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 180px;
+  border-top: 1px solid #cdc837;
+  border-right: 1px solid #cdc837;
 }
 #shop-presentation article h2 {
   margin-top: 20px;
@@ -697,18 +744,18 @@ header h1 {
 #map-presentation h2 {
   display: inline-block;
   padding-left: 50px;
-  border-bottom: 1px solid #bfc42c;
+  border-bottom: 1px solid #cdc837;
   padding-bottom: 5px;
 }
 #map-presentation > div {
-  border-left: 1px solid #bfc42c;
-  border-bottom: 1px solid #bfc42c;
+  border-left: 1px solid #cdc837;
+  border-bottom: 1px solid #cdc837;
   padding: 20px 0 20px 20px;
 }
 
 #map {
   height: 500px;
-  background: no-repeat center url("../images/carte-repere-mobile.png");
+  background: no-repeat center url("../images/carte/carte-repere-mobile.png");
   background-size: cover;
   cursor: default;
 }
@@ -719,7 +766,7 @@ header h1 {
   align-items: center;
   width: 100%;
   height: 100%;
-  background-color: rgba(191, 196, 44, 0.15);
+  background-color: rgba(205, 200, 55, 0.15);
 }
 
 #map-nav {
@@ -730,7 +777,7 @@ header h1 {
   bottom: 0;
   width: 100%;
   height: 60px;
-  background-color: rgba(191, 196, 44, 0.8);
+  background-color: rgba(205, 200, 55, 0.8);
 }
 #map-nav ul {
   display: flex;
@@ -781,7 +828,7 @@ header h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #bfc42c;
+  background-color: #cdc837;
   padding: 40px;
   border-radius: 5px;
   text-align: center;
@@ -839,8 +886,8 @@ header h1 {
   position: absolute;
   top: 0;
   right: 0;
-  border-top: 1px solid #bfc42c;
-  border-right: 1px solid #bfc42c;
+  border-top: 1px solid #cdc837;
+  border-right: 1px solid #cdc837;
   width: 60px;
   height: 60px;
 }
@@ -849,18 +896,30 @@ header h1 {
   position: absolute;
   bottom: 0;
   left: 0;
-  border-left: 1px solid #bfc42c;
-  border-bottom: 1px solid #bfc42c;
+  border-left: 1px solid #cdc837;
+  border-bottom: 1px solid #cdc837;
   width: 60px;
   height: 60px;
 }
 #shop-hours h2 {
   padding-bottom: 5px;
-  border-bottom: 1px solid #bfc42c;
+  border-bottom: 1px solid #cdc837;
 }
-#shop-hours p {
-  font-size: 0.85rem;
+#shop-hours > div p {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  font-size: 0.7rem;
+  margin: auto;
   margin-top: 15px;
+  width: 100%;
+}
+#shop-hours > div p .day {
+  padding-left: 20px;
+  font-weight: 700;
+}
+#shop-hours > div p .monday {
+  grid-column: 2/4;
 }
 #shop-hours a {
   display: flex;
@@ -869,10 +928,10 @@ header h1 {
   text-decoration: none;
   color: #12120f;
   font-weight: 700;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 #shop-hours a i {
-  color: #bfc42c;
+  color: #cdc837;
   margin-right: 10px;
   font-size: 1.2rem;
 }
@@ -883,7 +942,7 @@ header h1 {
   margin-top: 80px;
   width: 100%;
   height: 400px;
-  background: url(../images/avis-fond.jpg) bottom no-repeat;
+  background: url("../images/fond/avis-fond.jpg") bottom no-repeat;
   background-size: cover;
 }
 #opinion .opinion-title {
@@ -898,7 +957,7 @@ header h1 {
 }
 #opinion .opinion-title h2 {
   text-align: center;
-  border: 1px solid #bfc42c;
+  border: 1px solid #cdc837;
   padding: 5px;
 }
 #opinion .opinion-title h2 a {
@@ -918,7 +977,7 @@ header h1 {
 #opinion .opinion-button i {
   font-size: 3rem;
   padding: 8px;
-  color: #969a23;
+  color: #a7a32a;
   cursor: pointer;
 }
 #opinion .opinion-button-left::after {
@@ -928,7 +987,7 @@ header h1 {
   left: 0;
   height: 400px;
   width: 30px;
-  background: linear-gradient(90deg, #a2a625 0%, rgba(191, 196, 44, 0) 100%);
+  background: linear-gradient(90deg, #b3af2d 0%, rgba(205, 200, 55, 0) 100%);
   opacity: 0;
   transition: opacity 0.4s ease-in-out;
 }
@@ -942,7 +1001,7 @@ header h1 {
   right: 0;
   height: 400px;
   width: 30px;
-  background: linear-gradient(270deg, #a2a625 0%, rgba(191, 196, 44, 0) 100%);
+  background: linear-gradient(270deg, #b3af2d 0%, rgba(205, 200, 55, 0) 100%);
   opacity: 0;
   transition: opacity 0.4s ease-in-out;
   z-index: 2;
@@ -954,7 +1013,7 @@ header h1 {
   position: relative;
   height: 100%;
   width: 100%;
-  background-color: rgba(191, 196, 44, 0.9);
+  background-color: rgba(205, 200, 55, 0.9);
   padding: 20px;
 }
 #opinion .opinion-container .opinion-card {
@@ -1046,16 +1105,29 @@ header h1 {
 
 @media screen and (min-width: 390px) {
   #shop-presentation {
+    position: relative;
     width: 90%;
     margin-top: 30px;
-    border-left: 1px solid #bfc42c;
-    border-bottom: 1px solid #bfc42c;
-    background: top right 1px no-repeat url("../images/gold-quarter.png");
+    border-left: 1px solid #cdc837;
+    border-bottom: 1px solid #cdc837;
+  }
+  #shop-presentation::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 180px;
+    border-top: 1px solid #cdc837;
+    border-right: 1px solid #cdc837;
   }
   #shop-presentation article {
     border: none;
-    background: center no-repeat url("../images/Plan de travail 1.png");
+    background: center no-repeat url("../images/fond/fond-coeur.png");
     padding: 20px;
+  }
+  #shop-presentation article::after {
+    border: none;
   }
 
   #map-presentation {
@@ -1081,7 +1153,7 @@ header h1 {
 }
 @media screen and (min-width: 530px) {
   #map {
-    background-image: url("../images/carte-repere-desktop.png");
+    background-image: url("../images/carte/carte-repere-desktop.png");
   }
 }
 @media screen and (min-width: 700px) {
@@ -1100,6 +1172,11 @@ header h1 {
     margin-top: 0;
   }
 }
+@media screen and (min-width: 780px) {
+  #shop-hours > div p {
+    font-size: 0.8rem;
+  }
+}
 @media screen and (min-width: 1024px) {
   #shop-presentation {
     margin-top: 40px;
@@ -1116,7 +1193,7 @@ header h1 {
     margin-top: 0;
   }
   #shop-presentation article h2 {
-    border-bottom: 1px solid #bfc42c;
+    border-bottom: 1px solid #cdc837;
     padding-bottom: 5px;
     font-size: 1.3rem;
   }
@@ -1190,6 +1267,147 @@ header h1 {
 
   #opinion {
     width: 40%;
+  }
+}
+#produce-category {
+  width: 90%;
+  margin: auto;
+  margin-top: 40px;
+}
+#produce-category > div {
+  width: 100%;
+  padding: 20px;
+  position: relative;
+}
+#produce-category > div::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 60%;
+  width: 40%;
+  border-top: 1px solid #cdc837;
+  border-left: 1px solid #cdc837;
+  z-index: -1;
+}
+#produce-category > div::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 60%;
+  width: 40%;
+  border-bottom: 1px solid #cdc837;
+  border-right: 1px solid #cdc837;
+  z-index: -1;
+}
+#produce-category > div a {
+  color: black;
+  text-decoration: none;
+}
+
+.produce {
+  height: 300px;
+  width: 100%;
+  margin-top: 10px;
+}
+.produce:hover > div > div {
+  background: radial-gradient(circle, rgba(245, 245, 245, 0.7) 40%, rgba(255, 255, 255, 0) 100%);
+}
+.produce > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(205, 200, 55, 0.3);
+}
+.produce > div > div {
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(245, 245, 245, 0.6) 9%, rgba(255, 255, 255, 0) 100%);
+  padding: 20px;
+}
+.produce > div h2 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-weight: 700;
+  font-size: 1.5rem;
+  font-family: "Cormorant Garamond";
+  text-shadow: 0 0 1px #12120f;
+  text-align: center;
+}
+.produce > div h2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50%;
+  width: 50%;
+  border-top: 1px solid whitesmoke;
+  border-left: 1px solid whitesmoke;
+}
+.produce > div h2::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 50%;
+  width: 50%;
+  border-bottom: 1px solid whitesmoke;
+  border-right: 1px solid whitesmoke;
+}
+.produce#wedding-dress-category {
+  background: no-repeat top url("../images/categorie/AdobeStock_239523278.jpeg");
+  background-size: cover;
+}
+.produce#cocktail-dress-category {
+  background: no-repeat top url("../images/categorie/robe-cocktail.png");
+  background-size: cover;
+}
+.produce#dress-category {
+  background: no-repeat top url("../images/categorie/pret-a-porter.png");
+  background-size: cover;
+}
+.produce#child-dress-category {
+  background: no-repeat top url("../images/categorie/robe-petite-fille-paysage.jpg");
+  background-size: cover;
+}
+.produce#girl-accessory-category {
+  background-color: #cdc837;
+  background-size: cover;
+}
+.produce#costume-category {
+  background: no-repeat top url("../images/categorie/homme-costume-paysage.jpg");
+  background-size: cover;
+}
+.produce#child-costume-category {
+  background: no-repeat top url("../images/categorie/costume-enfant-paysage.jpg");
+  background-size: cover;
+}
+.produce#boy-accessory-category {
+  background: no-repeat top url("../images/categorie/accessoire-homme-paysage.jpg");
+  background-size: cover;
+}
+
+@media screen and (min-width: 800px) {
+  #produce-category > div > ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #produce-category > div > ul li {
+    width: 50%;
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+}
+@media screen and (min-width: 1500px) {
+  #produce-category > div > ul li {
+    width: 25%;
   }
 }
 

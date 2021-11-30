@@ -43,6 +43,7 @@
         }
     }
     article{
+        position: relative;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -51,7 +52,16 @@
         margin-top: 30px;
         border-left: 1px solid $second-color;
         border-bottom: 1px solid $second-color;
-        background: top right 1px no-repeat url("../images/gold-quarter.png"), center no-repeat url("../images/Plan\ de\ travail\ 1.png");
+        &::after{
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 60px;
+            height: 180px;
+            border-top: 1px solid $second-color;
+            border-right: 1px solid $second-color;
+        }
         h2{
             @extend %shop-h2;
             margin-top: 20px;
@@ -90,7 +100,7 @@
 
 #map{
     height: 500px;
-    background: no-repeat center url("../images/carte-repere-mobile.png");
+    background: no-repeat center url("../images/carte/carte-repere-mobile.png");
     background-size: cover;
     cursor: default;
     > div{
@@ -245,9 +255,23 @@
         padding-bottom: 5px;
         border-bottom: 1px solid $second-color;
     }
-    p{
-        font-size: .85rem;
-        margin-top: 15px;
+    > div {
+        p{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10px;
+            font-size: .7rem;
+            margin: auto;
+            margin-top: 15px;
+            width: 100%;
+            .day{
+                padding-left: 20px;
+                font-weight: 700;
+            }
+            .monday{
+                grid-column: 2 / 4;
+            }
+        }
     }
     a{
         display: flex;
@@ -256,7 +280,7 @@
         text-decoration: none;
         color: $third-color;
         font-weight: 700;
-        font-size: .9rem;
+        font-size: .8rem;
         i{
             color: $second-color;
             margin-right: 10px;
@@ -271,7 +295,7 @@
     margin-top: 80px;
     width: 100%;
     height: 400px;
-    background: url(../images/avis-fond.jpg) bottom no-repeat;
+    background: url("../images/fond/avis-fond.jpg") bottom no-repeat;
     background-size: cover;
     .opinion-title{
         position: absolute;
@@ -340,13 +364,13 @@
         }
     }
     .opinion-container{
-        position: relative; // A CORRIGER
+        position: relative;
         height: 100%;
         width: 100%;
         background-color:opacity($second-color, .9);
         padding: 20px;
-        .opinion-card{ // A CORRIGER
-            position: relative; // A CORRIGER
+        .opinion-card{
+            position: relative;
             height: 100%;
             border-top: 1px solid $first-color;
             border-right: 1px solid $first-color;
@@ -438,15 +462,28 @@
 
 @media screen and(min-width: 390px){
     #shop-presentation{
+        position: relative;
         width: 90%;
         margin-top: 30px;
         border-left: 1px solid $second-color;
         border-bottom: 1px solid $second-color;
-        background: top right 1px no-repeat url("../images/gold-quarter.png");
+        &::after{
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 60px;
+            height: 180px;
+            border-top: 1px solid $second-color;
+            border-right: 1px solid $second-color;
+        }
         article{
             border: none;
-            background: center no-repeat url("../images/Plan\ de\ travail\ 1.png");
+            background: center no-repeat url("../images/fond/fond-coeur.png");
             padding: 20px;
+            &::after{
+                border: none;
+            }
         }
     }
     #map-presentation{
@@ -485,7 +522,7 @@
 
 @media screen and(min-width: 530px){
     #map{
-        background-image: url("../images/carte-repere-desktop.png");
+        background-image: url("../images/carte/carte-repere-desktop.png");
     }   
 }
 
@@ -503,6 +540,16 @@
     #opinion{
         width: 48%;
         margin-top: 0;
+    }
+}
+
+@media screen and(min-width: 780px){
+    #shop-hours{
+        > div {
+            p{
+                font-size: .8rem;
+            }
+        }
     }
 }
 
