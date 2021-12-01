@@ -1410,5 +1410,92 @@ header h1 {
     width: 25%;
   }
 }
+#wedding-dress-produce {
+  position: relative;
+  width: 90%;
+  margin: auto;
+  margin-top: 40px;
+  padding: 20px;
+}
+#wedding-dress-produce::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 90%;
+  width: 30%;
+  border-top: 1px solid #cdc837;
+  border-right: 1px solid #cdc837;
+  z-index: -1;
+}
+#wedding-dress-produce::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 90%;
+  width: 30%;
+  border-bottom: 1px solid #cdc837;
+  border-left: 1px solid #cdc837;
+  z-index: -1;
+}
+#wedding-dress-produce > div {
+  display: grid;
+  grid-gap: 10px;
+}
+#wedding-dress-produce > div > div {
+  position: relative;
+}
+#wedding-dress-produce > div > div img {
+  width: 100%;
+  position: relative;
+}
+#wedding-dress-produce > div > div::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 3;
+  box-shadow: 0 0 15px whitesmoke inset;
+}
+#wedding-dress-produce > div .other-in-shop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(205, 200, 55, 0.3);
+  padding: 20px;
+}
+#wedding-dress-produce > div .other-in-shop p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 1.1rem;
+  font-weight: 700;
+  line-height: 25px;
+  text-align: center;
+  font-family: "Cormorant Garamond";
+  padding: 20px;
+  border: 1px solid whitesmoke;
+}
+
+@media screen and (min-width: 760px) {
+  #wedding-dress-produce > div {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 1024px) {
+  #wedding-dress-produce > div {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 1450px) {
+  #wedding-dress-produce > div {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
