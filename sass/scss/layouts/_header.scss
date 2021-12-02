@@ -1,5 +1,5 @@
 header{
-    > div{
+    .upper-part{
         @extend %header;
         background-image: url("../images/fond/boutique.png");
         margin-top: -100px;
@@ -15,14 +15,42 @@ header{
             }
         }
     }
-    h1{
-        text-align: center;
-        padding: 30px 5px 0px 5px;
-        font-size: 1.1em;
-        font-weight: 700;
-        text-transform: uppercase;
-        color: $second-color;
-        margin-top: 15px;
+    .lower-part{
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        h1{
+            display: inline-block;
+            text-align: center;
+            font-size: 1.1em;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: $second-color;
+            &.short-title{
+                position: relative;
+                padding: 0 10px;
+                &::before{
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    left: -50px;
+                    transform: translateY(-50%);
+                    width: 50px;
+                    height: 1px;
+                    background-color: $second-color;
+                }
+                &::after{
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    right: -50px;
+                    transform: translateY(-50%);
+                    width: 50px;
+                    height: 1px;
+                    background-color: $second-color;
+                }
+            }
+        }
     }
 }
 

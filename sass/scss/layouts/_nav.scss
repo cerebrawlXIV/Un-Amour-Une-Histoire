@@ -4,7 +4,7 @@
     display: none;
     position: sticky;
     top: 0;
-    z-index: 2;
+    z-index: 3;
     height: 100px; // Identique au margin-top du header (en négatif)
     background: linear-gradient(180deg, 
         $first-color 0%, 
@@ -56,7 +56,7 @@
 #mobile-nav-container{
     position: sticky;
     top: 0;
-    z-index: 2;
+    z-index: 3;
     height: 100px; // Identique au margin-top du header (en négatif)
     background: linear-gradient(180deg, 
         rgba(245, 245, 245,1) 0%, 
@@ -82,6 +82,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        margin-top: 25px;
         height: 50%;
         padding-top: 20px;
         cursor: pointer;
