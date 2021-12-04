@@ -67,15 +67,20 @@
             margin-top: 20px;
             text-align: center;
         }
-        h3{
-            margin-top: 10px;
-        }
         p{
             margin-top: 20px;
             line-height: 22px;
             font-size: .84rem;
             font-weight: 400;
             text-align: center;
+            .product-word{
+                color: darken($second-color, 2%);
+                font-weight: 500;
+            }
+            &.warning{
+                color: red;
+                font-weight: 700;
+            }
         }
     }
 }
