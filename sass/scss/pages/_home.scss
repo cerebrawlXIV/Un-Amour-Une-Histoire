@@ -154,10 +154,15 @@
                 justify-content: flex-end;
                 align-items: center;
                 width: 100%;
-                height: 30%;
+                height: 20%;
                 background: linear-gradient(360deg, 
                     $first-color 0%, 
-                    opacity($first-color, .8) 35%, 
+                    opacity($first-color, .0) 100%),
+                    linear-gradient(360deg, 
+                    $first-color 0%, 
+                    opacity($first-color, .0) 100%),
+                    linear-gradient(360deg, 
+                    $first-color 0%, 
                     opacity($first-color, .0) 100%);
                 h3{
                     margin-bottom: 20px;
@@ -254,9 +259,6 @@
             .slide{
                 > aside{
                     height: 15%;
-                    background: linear-gradient(360deg, 
-                    $first-color 0%, 
-                    opacity($first-color, 0) 100%);
                 }
             }
         }
