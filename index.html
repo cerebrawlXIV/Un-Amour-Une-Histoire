@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src='scripts/burger.js' defer></script>
+    <script src='scripts/nav-index.js' defer></script>
     <script src='scripts/slider.js' defer></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href='css/style.css'/>
     <!-- Google Analytics -->
     <script>
         window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
@@ -14,17 +17,27 @@
     </script>
     <script async src='https://www.google-analytics.com/analytics.js'></script>
     <!-- End Google Analytics -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-    <link rel="stylesheet" href='css/style.css'/>
     <title>Un amour, une histoire...</title>
 </head>
 <body>
     <nav id='desktop-nav'>
-        <ul>
+        <ul class='first-ul'>
             <li><a href="index.html">Accueil</a></li>
-            <li><a href="produit.html">Nos produits</a></li>
+            <li class='li-list'>
+                <a href="produit.html">Nos produits</a>
+                <ul class='second-ul'>
+                    <li><a href="https://www.google.com/">Robe de mariée</a></li>
+                    <li><a href="https://www.google.com/">Robe de cocktail</a></li>
+                    <li><a href="https://www.google.com/">Prêt-à-porter</a></li>
+                    <li><a href="https://www.google.com/">Robe enfant</a></li>
+                    <li><a href="https://www.google.com/">Accessoire femme</a></li>
+                    <li><a href="https://www.google.com/">Costume homme</a></li>
+                    <li><a href="https://www.google.com/">Costume enfant</a></li>
+                    <li><a href="https://www.google.com/">Accessoire homme</a></li>
+                </ul>
+            </li>
             <li><a href="boutique.html">La boutique</a></li>
-            <li><a href="https://iplogger.org/2Srsk6">Le blog</a></li>
+            <li><a href="#">Le blog</a></li>
         </ul>
     </nav>
     <div class='burger-container'>
@@ -34,9 +47,21 @@
     </div>
     <div id='mobile-nav-container'>
         <nav id='mobile-nav'>
-            <ul>
+            <ul class='first-ul'>
                 <li><a href="index.html">Accueil</a></li>
-                <li><a href="produit.html">Nos produits</a></li>
+                <li class='li-list'>
+                    <a href="produit.html">Nos produits</a>
+                    <ul class='second-ul'>
+                        <li><a href="https://www.google.com/">Robe de mariée</a></li>
+                        <li><a href="https://www.google.com/">Robe de cocktail</a></li>
+                        <li><a href="https://www.google.com/">Prêt-à-porter</a></li>
+                        <li><a href="https://www.google.com/">Robe enfant</a></li>
+                        <li><a href="https://www.google.com/">Accessoire femme</a></li>
+                        <li><a href="https://www.google.com/">Costume homme</a></li>
+                        <li><a href="https://www.google.com/">Costume enfant</a></li>
+                        <li><a href="https://www.google.com/">Accessoire homme</a></li>
+                    </ul>
+                </li>
                 <li><a href="boutique.html">La boutique</a></li>
                 <li><a href="https://iplogger.org/2Srsk6">Le blog</a></li>
             </ul>
@@ -112,7 +137,7 @@
                     </aside>
                 </article>
                 <article class='slide'>
-                    <img class='object-position-top' src="images/banniere/robe-mariee.png" alt='Une femme en robe de mariée'>
+                    <img class='object-position-top' src="images/banniere/robe-mariee.jpg" alt='Une femme en robe de mariée'>
                     <aside>
                         <h3>Robes de mariée</h3>
                         <p>Mesdames, trouvez la robe de mariée qui vous accompagnera durant ce grand moment</p>
@@ -144,7 +169,7 @@
                     </aside>
                 </article>
                 <article class='slide'>
-                    <img src="images/banniere/robe-cocktail-paysage.png" alt='Deux femmes dans des robes cocktail'>
+                    <img src="images/banniere/robe-cocktail-paysage.jpg" alt='Deux femmes dans des robes cocktail'>
                     <aside>
                         <h3>Robes cocktail</h3>
                         <p>Haute en couleur, tendance, chic, originale et raffinée...</p>

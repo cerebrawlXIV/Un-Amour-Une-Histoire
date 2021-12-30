@@ -1,8 +1,12 @@
 header{
     .upper-part{
         @extend %header;
-        background-image: url("../images/fond/boutique.png");
+        background-image: url("../images/fond/boutique.jpg");
         margin-top: -100px;
+        transition: margin-top .4s ease-in;
+        &.mouse-up{
+            margin-top: -400px;
+        }
         > div{
             @extend %degraded-header;
             p.company-name{
@@ -22,7 +26,7 @@ header{
         h1{
             display: inline-block;
             text-align: center;
-            font-size: 1.1em;
+            font-size: 1rem;
             font-weight: 700;
             text-transform: uppercase;
             color: $second-color;
@@ -52,12 +56,39 @@ header{
             }
         }
     }
+    .product-presentation-title{
+        display: flex;
+        justify-content: center;
+        font-family: $important-txt;
+        margin-top: 30px;
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: $second-color;
+    }
 }
 
 @media screen and(min-width: 1024px){
     header{
-        h1{
-            font-size: 1.2em;
+        .lower-part{
+            h1{
+                font-size: 1.2rem;
+            }
+        }
+        .product-presentation-title{
+            font-size: 1.4rem; 
+        }
+    }
+}
+
+@media screen and(min-width: 1400px){
+    header{
+        .lower-part{
+            h1{
+                font-size: 1.3rem;
+            }
+        }
+        .product-presentation-title{
+            font-size: 1.5rem; 
         }
     }
 }

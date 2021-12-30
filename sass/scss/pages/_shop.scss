@@ -105,7 +105,7 @@
 
 #map{
     height: 500px;
-    background: no-repeat center url("../images/carte/carte-repere-mobile.png");
+    background: no-repeat center url("../images/carte/carte-repere-mobile.jpg");
     background-size: cover;
     cursor: default;
     > div{
@@ -527,7 +527,7 @@
 
 @media screen and(min-width: 530px){
     #map{
-        background-image: url("../images/carte/carte-repere-desktop.png");
+        background-image: url("../images/carte/carte-repere-desktop.jpg");
     }   
 }
 

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="stylesheet" href='css/style.css'/>
     <script src='scripts/burger.js' defer></script>
+    <script src='scripts/nav.js' defer></script>
     <script src='scripts/movie.js' defer></script>
     <script src='scripts/map.js' defer></script>
     <script src='scripts/opinion.js' defer></script>
@@ -22,9 +23,21 @@
 </head>
 <body>
     <nav id='desktop-nav'>
-        <ul>
+        <ul class='first-ul'>
             <li><a href="index.html">Accueil</a></li>
-            <li><a href="produit.html">Nos produits</a></li>
+            <li class='li-list'>
+                <a href="produit.html">Nos produits</a>
+                <ul class='second-ul'>
+                    <li><a href="https://www.google.com/">Robe de mariée</a></li>
+                    <li><a href="https://www.google.com/">Robe de cocktail</a></li>
+                    <li><a href="https://www.google.com/">Prêt-à-porter</a></li>
+                    <li><a href="https://www.google.com/">Robe enfant</a></li>
+                    <li><a href="https://www.google.com/">Accessoire femme</a></li>
+                    <li><a href="https://www.google.com/">Costume homme</a></li>
+                    <li><a href="https://www.google.com/">Costume enfant</a></li>
+                    <li><a href="https://www.google.com/">Accessoire homme</a></li>
+                </ul>
+            </li>
             <li><a href="boutique.html">La boutique</a></li>
             <li><a href="#">Le blog</a></li>
         </ul>
@@ -36,9 +49,21 @@
     </div>
     <div id='mobile-nav-container'>
         <nav id='mobile-nav'>
-            <ul>
+            <ul class='first-ul'>
                 <li><a href="index.html">Accueil</a></li>
-                <li><a href="produit.html">Nos produits</a></li>
+                <li class='li-list'>
+                    <a href="produit.html">Nos produits</a>
+                    <ul class='second-ul'>
+                        <li><a href="https://www.google.com/">Robe de mariée</a></li>
+                        <li><a href="https://www.google.com/">Robe de cocktail</a></li>
+                        <li><a href="https://www.google.com/">Prêt-à-porter</a></li>
+                        <li><a href="https://www.google.com/">Robe enfant</a></li>
+                        <li><a href="https://www.google.com/">Accessoire femme</a></li>
+                        <li><a href="https://www.google.com/">Costume homme</a></li>
+                        <li><a href="https://www.google.com/">Costume enfant</a></li>
+                        <li><a href="https://www.google.com/">Accessoire homme</a></li>
+                    </ul>
+                </li>
                 <li><a href="boutique.html">La boutique</a></li>
                 <li><a href="#">Le blog</a></li>
             </ul>
@@ -57,7 +82,7 @@
     <main>
         <section id='shop-presentation'>
             <aside id='shop-movie'>
-                <video loop poster='images/presentation/image-fond-video.png'>
+                <video loop poster='images/presentation/image-fond-video.jpg'>
                     <source src="images/presentation/presentation-boutique.mp4" />
                 </video>
                 <div>
@@ -153,7 +178,7 @@
                         <div class='card active'>
                             <div class='top-area'>
                                 <div>
-                                    <img src="images/avis/avis-un.png" alt="Photo de la personne qui a posté le commentaire">
+                                    <img src="images/avis/avis-un.jpg" alt="Photo de la personne qui a posté le commentaire">
                                 </div>
                                 <div>
                                     <p>Rose & Or</p>
@@ -175,7 +200,7 @@
                         <div class='card'>
                             <div class='top-area'>
                                 <div>
-                                    <img src="images/avis/avis-deux.png" alt="Photo de la personne qui a posté le commentaire">
+                                    <img src="images/avis/avis-deux.jpg" alt="Photo de la personne qui a posté le commentaire">
                                 </div>
                                 <div>
                                     <p>Gloria “Glopy” DAWODU</p>
@@ -189,7 +214,7 @@
                         <div class='card'>
                             <div class='top-area'>
                                 <div>
-                                    <img src="images/avis/avis-trois.png" alt="Photo de la personne qui a posté le commentaire">
+                                    <img src="images/avis/avis-trois.jpg" alt="Photo de la personne qui a posté le commentaire">
                                 </div>
                                 <div>
                                     <p>Philippine TdO</p>
@@ -203,7 +228,7 @@
                         <div class='card'>
                             <div class='top-area'>
                                 <div>
-                                    <img src="images/avis/avis-sept.png" alt="Photo de la personne qui a posté le commentaire">
+                                    <img src="images/avis/avis-sept.jpg" alt="Photo de la personne qui a posté le commentaire">
                                 </div>
                                 <div>
                                     <p>Christel Thib</p>
@@ -221,7 +246,7 @@
                         <div class='card'>
                             <div class='top-area'>
                                 <div>
-                                    <img src="images/avis/avis-quatre.png" alt="Photo de la personne qui a posté le commentaire">
+                                    <img src="images/avis/avis-quatre.jpg" alt="Photo de la personne qui a posté le commentaire">
                                 </div>
                                 <div>
                                     <p>Clothilde LEBASLE</p>
@@ -235,7 +260,7 @@
                         <div class='card'>
                             <div class='top-area'>
                                 <div>
-                                    <img src="images/avis/avis-cinq.png" alt="Photo de la personne qui a posté le commentaire">
+                                    <img src="images/avis/avis-cinq.jpg" alt="Photo de la personne qui a posté le commentaire">
                                 </div>
                                 <div>
                                     <p>Marie Danneels</p>
@@ -249,7 +274,7 @@
                         <div class='card'>
                             <div class='top-area'>
                                 <div>
-                                    <img src="images/avis/avis-six.png" alt="Photo de la personne qui a posté le commentaire">
+                                    <img src="images/avis/avis-six.jpg" alt="Photo de la personne qui a posté le commentaire">
                                 </div>
                                 <div>
                                     <p>Pascaline Dagorn</p>

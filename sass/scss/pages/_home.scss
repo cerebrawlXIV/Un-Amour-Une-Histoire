@@ -6,6 +6,10 @@
     background-size: cover;
     box-shadow: inset -2px -5px 31px 15px $first-color;
     margin-top: -100px;
+    transition: margin-top .4s ease-in;
+    &.mouse-up{
+        margin-top: -400px;
+    }
     .degraded-header{
         position: relative;
         display: flex;
