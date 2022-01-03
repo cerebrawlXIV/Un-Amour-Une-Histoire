@@ -1819,10 +1819,57 @@ main {
   padding: 2px;
   margin-left: 5px;
 }
-.product-presentation .color-square .pink-color-square {
-  width: 100%;
+.product-presentation .color-square .interior-square {
+  width: 15px;
   height: 100%;
+}
+.product-presentation .color-square .interior-square.pink-color-square {
   background-color: #e5baba;
+}
+.product-presentation .color-square .interior-square.lavender-color-square {
+  background-color: #E6E6FA;
+}
+.product-presentation .color-square .interior-square.red-color-square {
+  background-color: #ca0b1b;
+}
+.product-presentation .color-square .interior-square.dark-red-color-square {
+  background-color: #632c37;
+}
+.product-presentation .color-square .interior-square.silver-color-square {
+  background-color: #BBA4B6;
+}
+.product-presentation .color-square .interior-square.light-blue-color-square {
+  background-color: #98CBD9;
+}
+.product-presentation .color-square .interior-square.blue-color-square {
+  background-color: #2c5ab4;
+}
+.product-presentation .color-square .interior-square.dark-blue-color-square {
+  background-color: #24213a;
+}
+.product-presentation .color-square .interior-square.blue-green-color-square {
+  background-color: #6E9CA1;
+}
+.product-presentation .color-square .interior-square.dark-green-color-square {
+  background-color: #084E56;
+}
+.product-presentation .color-square .interior-square.beige-color-square {
+  background-color: #D9BFB2;
+}
+.product-presentation .color-square .interior-square.dark-beige-color-square {
+  background-color: #9c9486;
+}
+.product-presentation .color-square .interior-square.purple-color-square {
+  background-color: #64485E;
+}
+.product-presentation .color-square .interior-square.white-color-square {
+  background-color: #ffffff;
+}
+.product-presentation .color-square .interior-square.black-color-square {
+  background-color: #000000;
+}
+.product-presentation .color-square .interior-square.degraded-pink-blue-color-square {
+  background: linear-gradient(270deg, #24213a 50%, #e5baba 50%);
 }
 
 @media screen and (min-width: 800px) {

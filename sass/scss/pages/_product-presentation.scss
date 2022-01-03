@@ -152,10 +152,57 @@ main{
         border: 1px solid $second-color;
         padding: 2px;
         margin-left: 5px;
-        .pink-color-square{
-            width: 100%;
+        .interior-square{
+            width: 15px;
             height: 100%;
-            background-color: #e5baba;
+            &.pink-color-square{
+                background-color: #e5baba;
+            }
+            &.lavender-color-square{
+                background-color: #E6E6FA;
+            }
+            &.red-color-square{
+                background-color: #ca0b1b;
+            }
+            &.dark-red-color-square{
+                background-color: #632c37;  
+            }
+            &.silver-color-square{
+                background-color: #BBA4B6;  
+            }
+            &.light-blue-color-square{
+                background-color: #98CBD9;
+            }
+            &.blue-color-square{
+                background-color: #2c5ab4;
+            }
+            &.dark-blue-color-square{
+                background-color: #24213a;
+            }
+            &.blue-green-color-square{
+                background-color: #6E9CA1;
+            }
+            &.dark-green-color-square{
+                background-color: #084E56;
+            }
+            &.beige-color-square{
+                background-color: #D9BFB2; 
+            }
+            &.dark-beige-color-square{
+                background-color: #9c9486;
+            }
+            &.purple-color-square{
+                background-color: #64485E;
+            }
+            &.white-color-square{
+                background-color: #ffffff;
+            }
+            &.black-color-square{
+                background-color: #000000;
+            }
+            &.degraded-pink-blue-color-square{
+                background: linear-gradient(270deg, rgba(36,33,58,1) 50%, rgba(229,186,186,1) 50%);
+            }
         }
     }
 }
