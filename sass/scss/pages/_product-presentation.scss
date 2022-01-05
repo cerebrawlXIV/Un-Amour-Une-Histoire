@@ -7,7 +7,7 @@ main{
     margin: auto;
     figure {
         position: relative;
-        max-width: 520px;
+        max-width: 460px;
         margin: auto;
         img{
             width: 100%;
@@ -26,7 +26,7 @@ main{
     article{
         position: relative;
         width: 100%;
-        max-width: 520px;
+        max-width: 460px;
         margin: auto;
         margin-top: 20px;
         padding: 5%;
@@ -123,7 +123,7 @@ main{
         display: block;
         width: 100%;
         height: 80px;
-        max-width: 520px;
+        max-width: 460px;
         margin: auto;
         background-color: $second-color;
         margin-top: 20px;
@@ -185,11 +185,17 @@ main{
             &.dark-green-color-square{
                 background-color: #084E56;
             }
+            &.ivory-color-square{
+                background-color: #f7e5e1; 
+            }
             &.beige-color-square{
                 background-color: #D9BFB2; 
             }
             &.dark-beige-color-square{
                 background-color: #9c9486;
+            }
+            &.light-brown-color-square{
+                background-color: #AF8786;
             }
             &.purple-color-square{
                 background-color: #64485E;
@@ -212,16 +218,18 @@ main{
         display: flex;
         justify-content: space-around;
         figure{
-            margin: 0 30px 0 ;
+            margin: 0 30px 0 0;
         }
         > div{
             display: flex;
             flex-direction: column;
             justify-content: space-around;
             article{
+                max-width: 520px;
                 margin: 0;
             }
             .back-button{
+                max-width: 520px;
                 margin: 0;
             }
         }

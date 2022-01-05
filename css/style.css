@@ -1673,7 +1673,7 @@ main {
 }
 .product-presentation figure {
   position: relative;
-  max-width: 520px;
+  max-width: 460px;
   margin: auto;
 }
 .product-presentation figure img {
@@ -1692,7 +1692,7 @@ main {
 .product-presentation article {
   position: relative;
   width: 100%;
-  max-width: 520px;
+  max-width: 460px;
   margin: auto;
   margin-top: 20px;
   padding: 5%;
@@ -1789,7 +1789,7 @@ main {
   display: block;
   width: 100%;
   height: 80px;
-  max-width: 520px;
+  max-width: 460px;
   margin: auto;
   background-color: #cdc837;
   margin-top: 20px;
@@ -1853,11 +1853,17 @@ main {
 .product-presentation .color-square .interior-square.dark-green-color-square {
   background-color: #084E56;
 }
+.product-presentation .color-square .interior-square.ivory-color-square {
+  background-color: #f7e5e1;
+}
 .product-presentation .color-square .interior-square.beige-color-square {
   background-color: #D9BFB2;
 }
 .product-presentation .color-square .interior-square.dark-beige-color-square {
   background-color: #9c9486;
+}
+.product-presentation .color-square .interior-square.light-brown-color-square {
+  background-color: #AF8786;
 }
 .product-presentation .color-square .interior-square.purple-color-square {
   background-color: #64485E;
@@ -1878,7 +1884,7 @@ main {
     justify-content: space-around;
   }
   .product-presentation figure {
-    margin: 0 30px 0;
+    margin: 0 30px 0 0;
   }
   .product-presentation > div {
     display: flex;
@@ -1886,9 +1892,11 @@ main {
     justify-content: space-around;
   }
   .product-presentation > div article {
+    max-width: 520px;
     margin: 0;
   }
   .product-presentation > div .back-button {
+    max-width: 520px;
     margin: 0;
   }
 }
