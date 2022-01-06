@@ -1820,8 +1820,8 @@ main {
   margin-left: 5px;
 }
 .product-presentation .color-square .interior-square {
-  width: 15px;
-  height: 100%;
+  width: 14.5px;
+  height: 14.5px;
 }
 .product-presentation .color-square .interior-square.pink-color-square {
   background-color: #e5baba;
