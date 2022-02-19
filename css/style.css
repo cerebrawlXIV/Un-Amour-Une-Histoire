@@ -1680,6 +1680,15 @@ main {
   width: 100%;
   max-width: 520px;
 }
+.product-presentation figure #second-picture {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  z-index: 1;
+  width: 20%;
+  box-shadow: 0 0 10px #f5f5f5;
+  cursor: pointer;
+}
 .product-presentation figure::after {
   content: "";
   position: absolute;
