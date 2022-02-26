@@ -16,6 +16,9 @@
     margin: auto;
     margin-top: 60px;
     padding: 20px;
+    &#test{
+        background-color: lighten($second-color, 35%);
+    }
     &::after{
         content: "";
         position: absolute;
@@ -25,7 +28,7 @@
         width: 30%;
         border-top: 1px solid $second-color;
         border-right: 1px solid $second-color;
-        z-index: -1;
+        z-index: 2;
     }
     &::before{
         content: "";
@@ -36,7 +39,7 @@
         width: 30%;
         border-bottom: 1px solid $second-color;
         border-left: 1px solid $second-color;
-        z-index: -1;
+        z-index: 2;
     }
     > div{
         display: grid;
@@ -63,6 +66,19 @@
                 z-index: 2;
                 box-shadow: 0 0 15px $first-color inset;
                 pointer-events:none
+            }
+            &.promote{
+                &::before{
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    bottom: 0;
+                    right: 0;
+                    z-index: 2;
+                    box-shadow: 0 0 15px lighten($second-color, 30%) inset;
+                    pointer-events:none
+                } 
             }
         }
         .other-in-shop{
