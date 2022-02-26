@@ -1551,8 +1551,13 @@ header .product-presentation-title {
   margin-top: 60px;
   padding: 20px;
 }
-.produce-list#test {
+.produce-list#promote-list {
   background-color: #f1efc6;
+  box-shadow: 0 0 50px #f5f5f5 inset;
+}
+.produce-list#promote-list h2 {
+  top: -20px;
+  right: 60px;
 }
 .produce-list::after {
   content: "";
@@ -1655,6 +1660,11 @@ header .product-presentation-title {
     right: 6%;
     font-size: 1.2rem;
   }
+  .produce-list#promote-list h2 {
+    top: -23px;
+    right: 6%;
+    font-size: 1.2rem;
+  }
 }
 @media screen and (min-width: 1024px) {
   #produce-presentation p {
@@ -1667,12 +1677,19 @@ header .product-presentation-title {
   .produce-list h2 {
     right: 12%;
   }
+  .produce-list#promote-list h2 {
+    right: 12%;
+  }
 }
 @media screen and (min-width: 1450px) {
   .produce-list > div {
     grid-template-columns: repeat(4, 1fr);
   }
   .produce-list h2 {
+    right: 17%;
+    font-size: 1.3rem;
+  }
+  .produce-list#promote-list h2 {
     right: 17%;
     font-size: 1.3rem;
   }

@@ -16,8 +16,13 @@
     margin: auto;
     margin-top: 60px;
     padding: 20px;
-    &#test{
+    &#promote-list{
         background-color: lighten($second-color, 35%);
+        box-shadow: 0 0 50px $first-color inset;
+        h2{
+            top: -20px;
+            right: 60px;
+        }
     }
     &::after{
         content: "";
@@ -124,6 +129,13 @@
             right: 6%;
             font-size: 1.2rem;
         }
+        &#promote-list{
+            h2{
+                top: -23px;
+                right: 6%;
+                font-size: 1.2rem;
+            }
+        }
     }
 }
 
@@ -140,6 +152,11 @@
         h2{
             right: 12%;
         }
+        &#promote-list{
+            h2{
+                right: 12%;
+            }
+        }
     }
 }
 
@@ -151,6 +168,12 @@
         h2{
             right: 17%;
             font-size: 1.3rem;
+        }
+        &#promote-list{
+            h2{
+                right: 17%;
+                font-size: 1.3rem;
+            }
         }
     }
 }
