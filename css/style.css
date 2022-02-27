@@ -1568,7 +1568,7 @@ header .product-presentation-title {
   width: 30%;
   border-top: 1px solid #cdc837;
   border-right: 1px solid #cdc837;
-  z-index: 2;
+  z-index: -1;
 }
 .produce-list::before {
   content: "";
@@ -1579,7 +1579,7 @@ header .product-presentation-title {
   width: 30%;
   border-bottom: 1px solid #cdc837;
   border-left: 1px solid #cdc837;
-  z-index: 2;
+  z-index: -1;
 }
 .produce-list > div {
   display: grid;
@@ -1753,6 +1753,7 @@ main {
 .product-presentation article p.descriptive {
   font-family: "Cormorant Garamond";
   font-size: 0.95rem;
+  line-height: 20px;
 }
 .product-presentation article .product-color {
   margin-top: 15px;
@@ -1866,6 +1867,9 @@ main {
 .product-presentation .color-square .interior-square.pink-color-square {
   background-color: #d68dc6;
 }
+.product-presentation .color-square .interior-square.dark-pink-color-square {
+  background-color: #92357e;
+}
 .product-presentation .color-square .interior-square.light-pink-color-square {
   background-color: #fcdfd1;
 }
@@ -1887,6 +1891,12 @@ main {
 .product-presentation .color-square .interior-square.blue-color-square {
   background-color: #2e2cb4;
 }
+.product-presentation .color-square .interior-square.green-blue-color-square {
+  background-color: #037597;
+}
+.product-presentation .color-square .interior-square.dark-blue-green-color-square {
+  background-color: #308baf;
+}
 .product-presentation .color-square .interior-square.dark-blue-color-square {
   background-color: #1c1263;
 }
@@ -1897,7 +1907,7 @@ main {
   background-color: #084E56;
 }
 .product-presentation .color-square .interior-square.ivory-color-square {
-  background-color: #f7e5e1;
+  background-color: #FFFFF0;
 }
 .product-presentation .color-square .interior-square.light-beige-color-square {
   background-color: #f0f0d3;

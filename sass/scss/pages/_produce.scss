@@ -33,7 +33,7 @@
         width: 30%;
         border-top: 1px solid $second-color;
         border-right: 1px solid $second-color;
-        z-index: 2;
+        z-index: -1;
     }
     &::before{
         content: "";
@@ -44,7 +44,7 @@
         width: 30%;
         border-bottom: 1px solid $second-color;
         border-left: 1px solid $second-color;
-        z-index: 2;
+        z-index: -1;
     }
     > div{
         display: grid;
