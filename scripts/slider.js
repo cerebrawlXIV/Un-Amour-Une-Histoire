@@ -33,7 +33,7 @@ setInterval(function(){
     }
     disabled();
     slide[count].classList.add("active");
-}, 6000);
+}, 3500);
 
 
 
